@@ -1,78 +1,114 @@
 
 export default function Analysis() {
   return (
-    <div className="p-8">
-      <h2 className="text-4xl">Hallazgos Clave de Engagement</h2>
-      <br />
-      <h4 className="text-2xl">Categorías de Alto Rendimiento</h4>
-      <br />
-      <div className="flex justify-start">
-        <table className=" min-w-full border border-gray-300 rounded-lg overflow-hidden">
-          <thead className="bg-gray-100 text-gray-600">
-            <tr>
-              <th className="border px-4 py-2 text-left">Categoría</th>
-              <th className="border px-4 py-2 text-left">Descripción</th>
-              <th className="border px-4 py-2 text-left">
-                Engagement Rate (Promedio)
-              </th>
-            </tr>
-          </thead>
-          <tbody className="text-start">
-            <tr>
-              <td className="border px-4 py-2">Propuesta de Valor Directa</td>
-              <td className="border px-4 py-2">
-                Financiamiento rápido y sin esperas (menos de 24h).
-              </td>
-              <td className="border px-4 py-2">10.10% (Imagen)</td>
-            </tr>
-            <tr>
-              <td className="border px-4 py-2">Conexión Histórica</td>
-              <td className="border px-4 py-2">
-                Uso de hechos (ej. Tulipomanía) como gancho para la solución.
-              </td>
-              <td className="border px-4 py-2">10.00% (Video)</td>
-            </tr>
-            <tr>
-              <td className="border px-4 py-2">Educativo Práctico</td>
-              <td className="border px-4 py-2">
-                Consejos de liquidez y flujo de caja vinculados a Ábaco.
-              </td>
-              <td className="border px-4 py-2">8.62% (Carrusel)</td>
-            </tr>
-            <tr>
-              <td className="border px-4 py-2">Humanización / Cultura</td>
-              <td className="border px-4 py-2">
-                El equipo detrás de la plataforma y cultura organizacional.
-              </td>
-              <td className="border px-4 py-2">8.33% (Imagen)</td>
-            </tr>
-            <tr>
-              <td className="border px-4 py-2">Casos de Éxito</td>
-              <td className="border px-4 py-2">
-                Historias reales de PYMES (ej. Mirna, Aceros y Equipos).
-              </td>
-              <td className="border px-4 py-2">~8.00% (Carrusel)</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <br />
-      <br />
+    <div className="max-w-6xl mx-auto py-14 px-6 space-y-12">
+
+      {/* Header */}
       <div>
-        <p className="text-start">
-          Patrones Detectados Temáticos: 
-          <br />
-          El éxito ocurre cuando se vincula a
-          Ábaco con la aceleración de metas. 
-          <br />El contenido técnico abstracto
-          (Prueba Ácida, RCC) tiene bajo rendimiento. 
-          <br />Emocionales: Resuenan
-          sentimientos de Alivio, Tranquilidad y Control. 
-          <br />Formatos: El Carrusel
-          es el rey para educación y casos de éxito (fomenta "guardados"); el
-          Video funciona para narrativas históricas o testimonios cortos.
+        <h2 className="text-3xl font-bold text-slate-900 mb-2">
+          Hallazgos Clave de Engagement
+        </h2>
+        <p className="text-slate-600">
+          Insights derivados del análisis de rendimiento de contenido.
         </p>
       </div>
+
+      {/* Categorías */}
+      <div className="bg-white rounded-3xl shadow-xl p-8 space-y-6">
+        <h3 className="text-2xl font-bold text-slate-800">
+          Categorías de Alto Rendimiento
+        </h3>
+
+        <div className="overflow-x-auto">
+          <table className="min-w-full border border-slate-200 rounded-xl overflow-hidden text-sm">
+            <thead className="bg-slate-100 text-slate-600">
+              <tr>
+                <th className="border border-slate-200 px-4 py-3 text-left">
+                  Categoría
+                </th>
+                <th className="border border-slate-200 px-4 py-3 text-left">
+                  Descripción
+                </th>
+                <th className="border border-slate-200 px-4 py-3 text-left">
+                  Engagement Rate (Promedio)
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-slate-700">
+              {[
+                [
+                  "Propuesta de Valor Directa",
+                  "Financiamiento rápido y sin esperas (menos de 24h).",
+                  "10.10% (Imagen)",
+                ],
+                [
+                  "Conexión Histórica",
+                  "Uso de hechos (ej. Tulipomanía) como gancho para la solución.",
+                  "10.00% (Video)",
+                ],
+                [
+                  "Educativo Práctico",
+                  "Consejos de liquidez y flujo de caja vinculados a Ábaco.",
+                  "8.62% (Carrusel)",
+                ],
+                [
+                  "Humanización / Cultura",
+                  "El equipo detrás de la plataforma y cultura organizacional.",
+                  "8.33% (Imagen)",
+                ],
+                [
+                  "Casos de Éxito",
+                  "Historias reales de PYMES (ej. Mirna, Aceros y Equipos).",
+                  "~8.00% (Carrusel)",
+                ],
+              ].map((row, index) => (
+                <tr key={index} className="hover:bg-slate-50 transition">
+                  {row.map((cell, i) => (
+                    <td
+                      key={i}
+                      className="border border-slate-200 px-4 py-3"
+                    >
+                      {cell}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* Patrones */}
+      <div className="bg-white rounded-3xl shadow-xl p-8 space-y-4">
+        <h3 className="text-2xl font-bold text-slate-800">
+          Patrones Detectados
+        </h3>
+
+        <ul className="list-disc list-inside text-slate-700 space-y-2 leading-relaxed">
+          <li>
+            El éxito ocurre cuando se vincula a Ábaco con la aceleración de metas.
+          </li>
+          <li>
+            El contenido técnico abstracto (Prueba Ácida, RCC) presenta bajo
+            rendimiento.
+          </li>
+          <li>
+            Las emociones que más resuenan son:{" "}
+            <span className="font-semibold">Alivio</span>,{" "}
+            <span className="font-semibold">Tranquilidad</span> y{" "}
+            <span className="font-semibold">Control</span>.
+          </li>
+          <li>
+            El <span className="font-semibold">Carrusel</span> es el formato líder
+            para educación y casos de éxito (fomenta guardados); el{" "}
+            <span className="font-semibold">Video</span> funciona mejor para
+            narrativas históricas o testimonios cortos.
+          </li>
+        </ul>
+      </div>
+
     </div>
   );
 }
+
+

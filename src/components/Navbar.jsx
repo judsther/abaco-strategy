@@ -6,11 +6,11 @@ export default function Navbar() {
       <h1 className="text-xl font-bold">ábaco digital media</h1>
 
       <div className="flex gap-6">
-        <Link className="hover:text-blue-400 transition" to="/">
+        <Link className="hover:text-blue-400 transition" to="/intro">
           Intro
         </Link>
         <Link className="hover:text-blue-400 transition" to="/analisis">
-          Analisys
+          Analysis
         </Link>
         <Link className="hover:text-blue-400 transition" to="/strategy">
           Strategy
