@@ -9,12 +9,10 @@ import Organic from "./components/pages/tactics/Organic";
 import LeadsInsights from "./components/pages/ads/LeadsInsights";
 import LeadsReport from "./components/pages/ads/LeadsReport";
 import LeadsStrategy from "./components/pages/ads/LeadsStrategy";
-import AdsTactics from "./components/pages/Ads/Ads";
+import AdsTactics from "./components/pages/ads/AdsTactics";
 
 
 
-
-{/* <Route path="/tactics/organic" element={<OrganicTactics />} /> */}
 
 function App() {
   return (
