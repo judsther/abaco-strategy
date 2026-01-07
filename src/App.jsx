@@ -5,6 +5,17 @@ import Navbar from "./components/Navbar";
 import Analysis from "./components/pages/Analysis";
 import Strategy from "./components/pages/strategy/Strategy";
 import Intro from "./components/pages/Intro";
+import Tactics from "./components/pages/tactics/Organic";
+import AdsTactics from "./components/pages/Ads/Ads";
+import Organic from "./components/pages/tactics/Organic";
+import LeadsInsights from "./components/pages/ads/LeadsInsights";
+import LeadsReport from "./components/pages/ads/LeadsReport";
+import LeadsStrategy from "./components/pages/ads/LeadsStrategy";
+
+
+
+
+{/* <Route path="/tactics/organic" element={<OrganicTactics />} /> */}
 
 function App() {
   return (
@@ -14,6 +25,12 @@ function App() {
         <Route path="/intro" element={<Intro />} />
         <Route path="/analisis" element={<Analysis />} />
         <Route path="/strategy" element={<Strategy />} />
+        <Route path="/tactics" element={<Tactics />} />
+        <Route path="/tactics/ads" element={<AdsTactics />} />
+        <Route path="/tactics/organic" element={<Organic />} />
+        <Route path="/tactics/ads-insights" element={<LeadsInsights />} />
+        <Route path="/tactics/ads-report" element={<LeadsReport />} />
+        <Route path="/tactics/ads-strategy" element={<LeadsStrategy />} />
       </Routes>
     </>
   );

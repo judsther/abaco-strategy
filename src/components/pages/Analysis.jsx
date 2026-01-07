@@ -2,7 +2,6 @@
 export default function Analysis() {
   return (
     <div className="max-w-6xl mx-auto py-14 px-6 space-y-12">
-
       {/* Header */}
       <div>
         <h2 className="text-3xl font-bold text-slate-900 mb-2">
@@ -64,10 +63,7 @@ export default function Analysis() {
               ].map((row, index) => (
                 <tr key={index} className="hover:bg-slate-50 transition">
                   {row.map((cell, i) => (
-                    <td
-                      key={i}
-                      className="border border-slate-200 px-4 py-3"
-                    >
+                    <td key={i} className="border border-slate-200 px-4 py-3">
                       {cell}
                     </td>
                   ))}
@@ -86,11 +82,15 @@ export default function Analysis() {
 
         <ul className="list-disc list-inside text-slate-700 space-y-2 leading-relaxed">
           <li>
-            El éxito ocurre cuando se vincula a Ábaco con la aceleración de metas.
+            El éxito ocurre cuando se vincula a Ábaco con la aceleración de
+            metas.
           </li>
           <li>
             El contenido técnico abstracto (Prueba Ácida, RCC) presenta bajo
-            rendimiento.
+            rendimiento: Aunque en otros productos financieros el contenido
+            técnico abstracto es tendencia, en el caso de nuestro producto no
+            logra transmitir el mensaje completo o se comprende parcialmente
+            generando ruido.
           </li>
           <li>
             Las emociones que más resuenan son:{" "}
@@ -99,14 +99,13 @@ export default function Analysis() {
             <span className="font-semibold">Control</span>.
           </li>
           <li>
-            El <span className="font-semibold">Carrusel</span> es el formato líder
-            para educación y casos de éxito (fomenta guardados); el{" "}
+            El <span className="font-semibold">Carrusel</span> es el formato
+            líder para educación y casos de éxito (fomenta guardados); el{" "}
             <span className="font-semibold">Video</span> funciona mejor para
             narrativas históricas o testimonios cortos.
           </li>
         </ul>
       </div>
-
     </div>
   );
 }
