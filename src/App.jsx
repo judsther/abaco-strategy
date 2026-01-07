@@ -5,8 +5,6 @@ import Navbar from "./components/Navbar";
 import Analysis from "./components/pages/Analysis";
 import Strategy from "./components/pages/strategy/Strategy";
 import Intro from "./components/pages/Intro";
-import Tactics from "./components/pages/tactics/Organic";
-import AdsTactics from "./components/pages/Ads/Ads";
 import Organic from "./components/pages/tactics/Organic";
 import LeadsInsights from "./components/pages/ads/LeadsInsights";
 import LeadsReport from "./components/pages/ads/LeadsReport";
