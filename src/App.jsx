@@ -9,6 +9,7 @@ import Organic from "./components/pages/tactics/Organic";
 import LeadsInsights from "./components/pages/ads/LeadsInsights";
 import LeadsReport from "./components/pages/ads/LeadsReport";
 import LeadsStrategy from "./components/pages/ads/LeadsStrategy";
+import AdsTactics from "./components/pages/Ads/Ads";
 
 
 
@@ -23,7 +24,7 @@ function App() {
         <Route path="/intro" element={<Intro />} />
         <Route path="/analisis" element={<Analysis />} />
         <Route path="/strategy" element={<Strategy />} />
-        <Route path="/tactics" element={<Tactics />} />
+     
         <Route path="/tactics/ads" element={<AdsTactics />} />
         <Route path="/tactics/organic" element={<Organic />} />
         <Route path="/tactics/ads-insights" element={<LeadsInsights />} />
