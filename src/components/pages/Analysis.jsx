@@ -36,27 +36,27 @@ export default function Analysis() {
             <tbody className="text-slate-700">
               {[
                 [
-                  "Propuesta de Valor Directa",
+                  "Propuesta de Valor Directa (Comercial/Promocional)",
                   "Financiamiento rápido y sin esperas (menos de 24h).",
                   "10.10% (Imagen)",
                 ],
                 [
-                  "Conexión Histórica",
+                  "Conexión Histórica (Dato Curioso)",
                   "Uso de hechos (ej. Tulipomanía) como gancho para la solución.",
                   "10.00% (Video)",
                 ],
                 [
-                  "Educativo Práctico",
+                  "Educativo Práctico (Educativo/Útil)",
                   "Consejos de liquidez y flujo de caja vinculados a Ábaco.",
                   "8.62% (Carrusel)",
                 ],
                 [
-                  "Humanización / Cultura",
+                  "Humanización / Cultura (Cultura Organizacional)",
                   "El equipo detrás de la plataforma y cultura organizacional.",
                   "8.33% (Imagen)",
                 ],
                 [
-                  "Casos de Éxito",
+                  "Casos de Éxito (Inspiracional/Aspiracional)",
                   "Historias reales de PYMES (ej. Mirna, Aceros y Equipos).",
                   "~8.00% (Carrusel)",
                 ],
