@@ -2,17 +2,15 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 
-import Analysis from "./components/pages/Analysis";
-import Strategy from "./components/pages/strategy/Strategy";
-import Intro from "./components/pages/Intro";
-import Organic from "./components/pages/tactics/Organic";
-import LeadsInsights from "./components/pages/ads/LeadsInsights";
-import LeadsReport from "./components/pages/ads/LeadsReport";
-import LeadsStrategy from "./components/pages/ads/LeadsStrategy";
-import AdsTactics from "./components/pages/ads/AdsTactics";
-
-
-
+import OrganicAnalysis from "./pages/organic/OrganicAnalysis";
+import OrganicStrategy from "./pages/organic/OrganicStrategy";
+import OrganicTactics from "./pages/organic/OrganicTactics";
+import AdsTactics from "./pages/ads/AdsTactics";
+import Intro from "./pages/Intro";
+import LeadsInsights from "./pages/ads/components/LeadsInsights";
+import AdsReport from "./pages/ads/AdsReport";
+import AdsStrategy from "./pages/ads/AdsStrategy";
+import ContentCalendarView from "./pages/organic/ContentCalendarView";
 
 function App() {
   return (
@@ -20,14 +18,15 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/intro" element={<Intro />} />
-        <Route path="/analisis" element={<Analysis />} />
-        <Route path="/strategy" element={<Strategy />} />
-     
-        <Route path="/tactics/ads" element={<AdsTactics />} />
-        <Route path="/tactics/organic" element={<Organic />} />
-        <Route path="/tactics/ads-insights" element={<LeadsInsights />} />
-        <Route path="/tactics/ads-report" element={<LeadsReport />} />
-        <Route path="/tactics/ads-strategy" element={<LeadsStrategy />} />
+        <Route path="/organic-analisis" element={<OrganicAnalysis />} />
+        <Route path="/organic-strategy" element={<OrganicStrategy />} />
+        <Route path="/organic-tactics" element={<OrganicTactics />} />
+        <Route path="/organic-tactics-calendar" element={<ContentCalendarView />} />
+
+        <Route path="/ads-report" element={<AdsReport />} />
+        <Route path="/ads-tactics" element={<AdsTactics />} />
+        <Route path="/ads-strategy" element={<AdsStrategy />} />
+        <Route path="/leads-insights" element={<LeadsInsights />} />
       </Routes>
     </>
   );

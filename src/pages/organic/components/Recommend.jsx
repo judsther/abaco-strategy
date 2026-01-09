@@ -1,8 +1,10 @@
 
 
+
  function RecommendationCard({ title, items }) {
    return (
      <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col gap-4">
+      
        <h3 className="text-xl font-bold text-slate-800">{title}</h3>
 
        <ul className="space-y-3 text-slate-700">
@@ -82,9 +84,10 @@ export default function Recommendations() {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto py-12 px-6">
+    <div className="">
+      
       <h2 className="text-3xl font-bold mb-10 text-slate-900">
-        Recomendaciones de Contenido 
+        Recomendaciones de Contenido
       </h2>
 
       <div className="grid md:grid-cols-3 gap-8">

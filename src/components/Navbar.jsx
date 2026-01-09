@@ -1,28 +1,44 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+// import { useState } from "react";
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-slate-900 text-white px-6 py-4 flex justify-between items-center shadow-lg relative">
+    <nav className="bg-white text-slate-500 px-6 py-4 flex justify-between items-center shadow-lg relative">
       <h1 className="text-xl font-bold">ábaco digital media</h1>
 
       <div className="flex gap-8 items-center">
-        <Link className="hover:text-blue-400 transition" to="/intro">
-          Intro
+        <Link
+          className="border border-indigo-800 rounded-4xl px-4 py-1 hover:text-slate-800 transition"
+          to="/intro"
+        >
+          Home
         </Link>
 
-        <Link className="hover:text-blue-400 transition" to="/analisis">
-          Analysis
+        <Link
+          className="border border-indigo-800 rounded-4xl px-4 py-1 hover:text-slate-800 transition"
+          to="/organic-analisis"
+        >
+          Orgánico
         </Link>
 
-        <Link className="hover:text-blue-400 transition" to="/strategy">
-          Strategy
+        <Link
+          className="border border-indigo-800 rounded-4xl px-4 py-1 hover:text-slate-800 transition"
+          to="ads-report"
+        >
+          Publicidad
+        </Link>
+
+        <Link
+          className="border border-indigo-300 rounded-4xl px-4 py-1 text-slate-400 hover:text-slate-700 hover:border-indigo-800 transition"
+          to="/organic-tactics-calendar"
+        >
+          Calendario
         </Link>
 
         {/* Dropdown Tactics */}
-        <div className="relative">
+        {/* <div className="relative">
           <div
             className="cursor-pointer hover:text-blue-400 transition"
             onMouseEnter={() => setOpen(true)}
@@ -50,7 +66,7 @@ export default function Navbar() {
               </Link>
             </div>
           )}
-        </div>
+        </div> */}
       </div>
     </nav>
   );

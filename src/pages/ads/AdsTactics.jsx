@@ -8,30 +8,30 @@ export default function AdsTactics() {
         <p>
           <Link
             className="text-white hover:text-blue-400 bg-indigo-800 p-2 px-4 rounded-2xl transition"
-            to="/tactics/ads-report"
+            to="/ads-report"
           >
-            Report
+            Reporte
           </Link>
         </p>
         <p>
           <Link
-            className="text-white hover:text-blue-400 bg-indigo-800 p-2 rounded-2xl transition"
-            to="/tactics/ads-insights"
+            className="text-white hover:text-blue-400 bg-indigo-800 p-2 px-4 rounded-2xl transition"
+            to="/ads-strategy"
           >
-            Insights
+            Estrategia
           </Link>
         </p>
         <p>
           <Link
-            className="text-white hover:text-blue-400 bg-indigo-800 p-2 rounded-2xl transition"
-            to="/tactics/ads-strategy"
+            className="text-white hover:text-blue-400 bg-indigo-800 p-2 px-4 rounded-2xl transition"
+            to="/ads-tactics"
           >
-            Strategy
+            Tácticas
           </Link>
         </p>
       </div>
       <header>
-        <h2 className="text-4xl font-bold text-slate-900">
+        <h2 className="text-4xl font-semibold text-slate-900">
           Táctica de Campañas Pagadas — Q1 2026
         </h2>
         <p className="text-slate-600 mt-2">
