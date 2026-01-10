@@ -11,6 +11,7 @@ import LeadsInsights from "./pages/ads/components/LeadsInsights";
 import AdsReport from "./pages/ads/AdsReport";
 import AdsStrategy from "./pages/ads/AdsStrategy";
 import ContentCalendarView from "./pages/organic/ContentCalendarView";
+import PaidAdsKPIsView from "./pages/ads/AdsKPIsView";
 
 function App() {
   return (
@@ -21,12 +22,16 @@ function App() {
         <Route path="/organic-analisis" element={<OrganicAnalysis />} />
         <Route path="/organic-strategy" element={<OrganicStrategy />} />
         <Route path="/organic-tactics" element={<OrganicTactics />} />
-        <Route path="/organic-tactics-calendar" element={<ContentCalendarView />} />
+        <Route
+          path="/organic-tactics-calendar"
+          element={<ContentCalendarView />}
+        />
 
         <Route path="/ads-report" element={<AdsReport />} />
         <Route path="/ads-tactics" element={<AdsTactics />} />
         <Route path="/ads-strategy" element={<AdsStrategy />} />
         <Route path="/leads-insights" element={<LeadsInsights />} />
+        <Route path="/ads-kpis" element={<PaidAdsKPIsView />} />
       </Routes>
     </>
   );

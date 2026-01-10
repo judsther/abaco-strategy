@@ -86,7 +86,7 @@ export default function Recommendations() {
   return (
     <div className="">
       
-      <h2 className="text-3xl font-bold mb-10 text-slate-900">
+      <h2 className="text-3xl font-semibold mb-10 mt-28 text-slate-900">
         Recomendaciones de Contenido
       </h2>
 

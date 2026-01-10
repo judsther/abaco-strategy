@@ -4,7 +4,7 @@ export default function Identity() {
   return (
     <div className="max-w-6xl mx-auto py-12 px-6 space-y-12">
       <div>
-        <h2 className="text-3xl font-bold text-slate-900 mb-2">
+        <h2 className="text-3xl font-semibold text-slate-900 mb-2">
           Guía de Identidad y Estilo
         </h2>
         <p className="text-slate-600">

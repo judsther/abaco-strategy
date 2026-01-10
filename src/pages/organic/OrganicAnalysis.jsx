@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+
 export default function OrganicAnalysis() {
   return (
     <div className="max-w-6xl mx-auto py-14 px-6 space-y-12">
@@ -38,6 +39,7 @@ export default function OrganicAnalysis() {
           Insights derivados del análisis de rendimiento de contenido.
         </p>
       </div>
+    
 
       {/* Categorías */}
       <div className="bg-white rounded-3xl shadow-xl p-8 space-y-6">

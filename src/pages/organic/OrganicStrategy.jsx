@@ -2,6 +2,7 @@
 import Recommendations from "./components/Recommend";
 import Identity from "./components/Identity";
 import { Link } from "react-router-dom";
+import KPIsView from "./components/OrganicKPIsView";
 
 export default function OrganicStrategy() {
   return (
@@ -32,6 +33,7 @@ export default function OrganicStrategy() {
           </Link>
         </p>
       </div>
+      <KPIsView />
       <Recommendations />
       <Identity />
     </div>
