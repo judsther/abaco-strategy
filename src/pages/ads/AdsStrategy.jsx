@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PrimaryButton from "../../components/PrimaryButton";
 
 export default function AdsStrategy() {
   return (
@@ -29,7 +30,7 @@ export default function AdsStrategy() {
           </Link>
         </p>
       </div>
-
+      <PrimaryButton to={"/ads-kpis"} texto={"KPIs"} />
       <div className="min-h-screen from-black via-zinc-900 to-black">
         {/* Header */}
         <div className="flex justify-between items-start mb-16">
@@ -136,23 +137,30 @@ export default function AdsStrategy() {
 
 function Card({ title, body, target, why, accent }) {
   return (
-    <div className={`rounded-2xl p-6 backdrop-blur bg-white/5 border ${accent ? "border-indigo-500/30" : "border-white/10"} shadow-xl`}>
+    <div
+      className={`rounded-2xl p-6 backdrop-blur bg-white/5 border ${
+        accent ? "border-indigo-500/30" : "border-white/10"
+      } shadow-xl`}
+    >
       <h3 className="text-lg font-medium mb-2">{title}</h3>
       <p className="text-zinc-700 mb-6">{body}</p>
 
       <div className="text-xs space-y-1">
-        <p><span className="text-zinc-700">TARGET</span> — {target}</p>
-        <p><span className="text-zinc-700">WHY</span> — {why}</p>
+        <p>
+          <span className="text-zinc-700">TARGET</span> — {target}
+        </p>
+        <p>
+          <span className="text-zinc-700">WHY</span> — {why}
+        </p>
       </div>
     </div>
-  )
+  );
 }
-
 
 // function Block({ title, children }) {
 //   return (
 //     <div className="bg-white border rounded-xl p-8 shadow space-y-4">
-        
+
 //       <h2 className="text-xl font-bold">{title}</h2>
 //       {children}
 //     </div>

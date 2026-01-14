@@ -11,7 +11,7 @@ import LeadsInsights from "./pages/ads/components/LeadsInsights";
 import AdsReport from "./pages/ads/AdsReport";
 import AdsStrategy from "./pages/ads/AdsStrategy";
 import ContentCalendarView from "./pages/organic/ContentCalendarView";
-import PaidAdsKPIsView from "./pages/ads/AdsKPIsView";
+import PaidAdsKPIsView from "./pages/ads/PaidAdsKPIsView";
 
 function App() {
   return (

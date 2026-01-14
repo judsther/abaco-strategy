@@ -33,28 +33,28 @@ export default function Identity() {
         <div className="grid md:grid-cols-3 gap-6">
           <div className="bg-slate-50 rounded-2xl p-6">
             <h4 className="font-semibold text-slate-900 mb-2">
-              De Parálisis a Fluidez
+              Énfasis en Fluidez
             </h4>
             <p className="text-slate-700 italic">
-              “No dejes que tu operación se detenga. Tu capital siempre fluye.”
+              Falta de dinero disponible cuando se necesita.
             </p>
           </div>
 
           <div className="bg-slate-50 rounded-2xl p-6">
             <h4 className="font-semibold text-slate-900 mb-2">
-              De Frustración a Velocidad
+              Ofrecer Velocidad
             </h4>
             <p className="text-slate-700 italic">
-              “Cada día sin tu dinero es un día menos para crecer.”
+              Los procesos tradicionales para obtener liquidez requieren papeleo y largas filas.
             </p>
           </div>
 
           <div className="bg-slate-50 rounded-2xl p-6">
             <h4 className="font-semibold text-slate-900 mb-2">
-              De Incertidumbre a Seguridad
+              Dar Seguridad
             </h4>
             <p className="text-slate-700 italic">
-              “Financia tu crecimiento sin arriesgar tu futuro ni endeudarte.”
+              Desconfianza por endeudarse, ser estafado o que resulte contraproducente.
             </p>
           </div>
         </div>

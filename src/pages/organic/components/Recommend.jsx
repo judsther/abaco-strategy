@@ -22,7 +22,7 @@
 export default function Recommendations() {
   const data = [
     {
-      section: "A. Para Pauta (Paid Media)",
+      section: "A. Vale la pena un Boost",
       items: [
         {
           title: "Casos de Éxito en Video",
@@ -32,12 +32,11 @@ export default function Recommendations() {
         {
           title: "Ofertas Directas",
           description:
-            '"Liquidez en 24h" con verbos de acción. Ideal para captar leads fríos.',
+            'Videos y Statics directos "Liquidez en 24h" con verbos de acción. Ideal para captar leads fríos.',
         },
         {
           title: "Educación de Consideración",
-          description:
-            'Carruseles de "3 tips para optimizar flujo de caja".',
+          description: 'Carruseles de "3 tips para optimizar flujo de caja".',
         },
       ],
     },
@@ -56,8 +55,12 @@ export default function Recommendations() {
         },
         {
           title: "Datos Curiosos con Propósito",
+          description: "Solo si la conexión con el producto es obvia y útil.",
+        },
+        {
+          title: "Reels con hooks claros",
           description:
-            "Solo si la conexión con el producto es obvia y útil.",
+            'Comenzar con el uso de "cómo (hacer/lograr)..." "sabías que (puedes/no es necesario)..." "3 (beneficios/consejos/claves)..."',
         },
       ],
     },
