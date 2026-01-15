@@ -3,7 +3,7 @@ import PrimaryButton from "../../components/PrimaryButton";
 
 export default function AdsStrategy() {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-12 space-y-10">
+    <section className="max-w-7xl mx-auto px-6 py-12 space-y-12">
       <div className="flex space-x-2.5">
         <p>
           <Link

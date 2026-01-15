@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import PrimaryButton from "../../components/PrimaryButton";
 
 
 export default function AdsTactics() {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 space-y-16">
+    <div className="max-w-7xl mx-auto px-6 py-12 space-y-12">
       <div className="flex space-x-2.5">
         <p>
           <Link
@@ -30,6 +31,7 @@ export default function AdsTactics() {
           </Link>
         </p>
       </div>
+      <PrimaryButton to={"/ads-kpis"} texto={"KPIs"} />
       <header>
         <h2 className="text-4xl font-semibold text-slate-900">
           Táctica de Campañas Pagadas — Q1 2026

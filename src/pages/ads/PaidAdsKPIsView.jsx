@@ -1,6 +1,36 @@
+import { Link } from "react-router-dom";
+import PrimaryButton from "../../components/PrimaryButton";
+
 export default function PaidAdsKPIsView() {
   return (
-    <div className="max-w-7xl mx-auto py-16 px-6 space-y-20">
+    <div className="max-w-7xl mx-auto py-12 px-6 space-y-12">
+      <div className="flex space-x-2.5">
+        <p>
+          <Link
+            className="text-white hover:text-blue-400 bg-indigo-800 p-2 px-4 rounded-2xl transition"
+            to="/ads-report"
+          >
+            Reporte
+          </Link>
+        </p>
+        <p>
+          <Link
+            className="text-white hover:text-blue-400 bg-indigo-800 p-2 px-4 rounded-2xl transition"
+            to="/ads-strategy"
+          >
+            Estrategia
+          </Link>
+        </p>
+        <p>
+          <Link
+            className="text-white hover:text-blue-400 bg-indigo-800 p-2 px-4 rounded-2xl transition"
+            to="/ads-tactics"
+          >
+            Tácticas
+          </Link>
+        </p>
+      </div>
+      <PrimaryButton to={"/ads-kpis"} texto={"KPIs"} />
       {/* Header */}
       <div className="text-start space-y-3">
         <h1 className="text-3xl font-semibold text-slate-900">

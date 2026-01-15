@@ -11,13 +11,16 @@ export default function TiktokCalendar() {
         </p>
         <p className="whitespace-pre-wrap text-slate-400 font-semibold -mt-16">
           {`Liquidez Inteligente & Operativa 
-Foco en agilidad y eliminación de esperas.
+(Foco en agilidad y eliminación de esperas.)
           
 Crecimiento Ágil & Estratégico 
-Cómo usar el capital para invertir y escalar. Confianza & Comunidad Ábaco Transparencia, equipo y valores humanos. 
+(Cómo usar el capital para invertir y escalar.)
+
+Confianza & Comunidad Ábaco 
+(Transparencia, equipo y valores humanos.) 
 
 Liderazgo Fintech & Innovación 
-Tendencias digitales y visión de futuro en Centroamérica.`}
+(Tendencias digitales y visión de futuro en Centroamérica.)`}
         </p>
         <CalendarItem
           day="Miércoles"

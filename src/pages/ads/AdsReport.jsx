@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import ROICalculatorView from "./components/ROICalculatorView";
 
 export default function AdsReport() {
   return (
@@ -206,6 +207,8 @@ export default function AdsReport() {
           </ul>
         </div>
       </section>
+
+      <ROICalculatorView/>
     </div>
   );
 }
