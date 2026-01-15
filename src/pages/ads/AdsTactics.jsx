@@ -1,133 +1,208 @@
 import { Link } from "react-router-dom";
 import PrimaryButton from "../../components/PrimaryButton";
 
-
 export default function AdsTactics() {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 space-y-12">
-      <div className="flex space-x-2.5">
-        <p>
+    <div className="max-w-7xl mx-auto px-6 py-12 space-y-14">
+      {/* Navigation */}
+      <div className="flex flex-wrap gap-3">
+        {[
+          { to: "/ads-report", label: "Reporte" },
+          { to: "/ads-strategy", label: "Estrategia" },
+          { to: "/ads-tactics", label: "Tácticas" },
+        ].map((item) => (
           <Link
-            className="text-white hover:text-blue-400 bg-indigo-800 p-2 px-4 rounded-2xl transition"
-            to="/ads-report"
+            key={item.to}
+            to={item.to}
+            className="bg-white text-slate-700 px-5 py-2 border border-indigo-500 rounded-3xl shadow hover:bg-indigo-700 transition"
           >
-            Reporte
+            {item.label}
           </Link>
-        </p>
-        <p>
-          <Link
-            className="text-white hover:text-blue-400 bg-indigo-800 p-2 px-4 rounded-2xl transition"
-            to="/ads-strategy"
-          >
-            Estrategia
-          </Link>
-        </p>
-        <p>
-          <Link
-            className="text-white hover:text-blue-400 bg-indigo-800 p-2 px-4 rounded-2xl transition"
-            to="/ads-tactics"
-          >
-            Tácticas
-          </Link>
-        </p>
+        ))}
+        <PrimaryButton to={"/ads-kpis"} texto={"KPIs"} />
       </div>
-      <PrimaryButton to={"/ads-kpis"} texto={"KPIs"} />
-      <header>
-        <h2 className="text-4xl font-semibold text-slate-900">
-          Táctica de Campañas Pagadas — Q1 2026
-        </h2>
-        <p className="text-slate-600 mt-2">
-          Arquitectura de campañas, segmentación y validación estratégica
-        </p>
-      </header>
 
-      <section className="grid md:grid-cols-2 gap-8">
-        <CampaignCard
-          title="L1 — Impulso a tu Crecimiento"
-          objective="Generación de Leads (TOFU / MOFU)"
-          message="¿Necesitas CAPITAL de TRABAJO hoy? ¡Ábaco te lo da en -24h!"
-          kpi="CPL y número de registros"
-        />
+      {/* Header */}
+      <div className="border-l-4 border-indigo-800 pl-6 space-y-1">
+        <h1 className="text-4xl font-extrabold text-slate-900">Ads Q1 Mes 1</h1>
+        <p className="text-slate-600 text-lg">Presupuesto: —</p>
+      </div>
 
-        <CampaignCard
-          title="L2 — Historias de Éxito"
-          objective="Consideración y Confianza (MOFU / BOFU)"
-          message="Construye confianza mostrando el impacto real de otras PYMES."
-          kpi="Clics, tiempo de visualización, leads de demo"
-        />
-
-        <CampaignCard
-          title="L3 — Domina tu Flujo de Caja"
-          objective="Leads calificados y Autoridad (MOFU)"
-          message="WEBINAR GRATUITO: Flujo de Caja sin Estrés"
-          kpi="CPR, tasa de asistencia, leads"
-        />
-
-        <CampaignCard
-          title="L4 — Ábaco Express"
-          objective="Conversión Directa (BOFU)"
-          message="Liquidez Digital, Crecimiento Real"
-          kpi="Costo por registro, conversión, ROI"
-        />
+      {/* Objetivos */}
+      <section className="bg-white rounded-3xl shadow-xl p-10 space-y-4">
+        <h2 className="text-2xl font-bold text-indigo-800">Objetivos</h2>
+        <div className="grid md:grid-cols-2 gap-6 text-slate-700">
+          <p>Generación de Leads: ---</p>
+          <p>Leads Calificados: ---</p>
+        </div>
       </section>
 
-      <ResearchSection />
-    </div>
-  );
-}
- function ResearchSection() {
-  return (
-    <section className="bg-white border rounded-xl shadow p-8 space-y-6">
-      <h3 className="text-2xl font-bold text-slate-900">
-        Research & Validación Estratégica
-      </h3>
+      {/* Ads Set */}
+      <section className="bg-white rounded-3xl shadow-xl p-10 space-y-8">
+        <h2 className="text-2xl font-bold text-indigo-800">Ads Set</h2>
 
-      <ResearchBlock
-        title="Tendencias Fintech B2B para PYMES LATAM"
-        items={[
-          "Finanzas embebidas y UX optimizada",
-          "Automatización e IA en evaluación crediticia",
-          "Prioridad en flujo de caja y capital de trabajo",
-          "Contenido educativo y liderazgo localizado",
-        ]}
-      />
+        <div className="space-y-6">
+          <h3 className="text-xl font-semibold text-slate-900">Video</h3>
 
-      <ResearchBlock
-        title="Oportunidades por Formato & Plataforma"
-        items={[
-          "TikTok B2B: Edu-tainment, storytelling, behind the scenes",
-          "YouTube B2B: Tutoriales, entrevistas, webinars",
-          "Carruseles y Reels/Shorts: formatos de alto engagement",
-        ]}
-      />
-    </section>
-  );
-}
-function ResearchBlock({ title, items }) {
-  return (
-    <div className="bg-slate-50 border rounded-lg p-6 space-y-3">
-      <h4 className="font-semibold text-slate-900">{title}</h4>
-      <ul className="list-disc pl-5 text-slate-700 space-y-1">
-        {items.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-function CampaignCard({ title, objective, message, kpi }) {
-  return (
-    <div className="bg-white border rounded-xl shadow p-6 space-y-3">
-      <h3 className="text-xl font-bold text-slate-900">{title}</h3>
-      <p className="text-slate-700">
-        <strong>Objetivo:</strong> {objective}
-      </p>
-      <p className="text-slate-700">
-        <strong>Mensaje:</strong> {message}
-      </p>
-      <p className="text-slate-700">
-        <strong>KPI Principal:</strong> {kpi}
-      </p>
+          <div className="bg-slate-50 rounded-2xl p-6 space-y-3">
+            <p className="font-semibold text-slate-800">Guion:</p>
+            <p>3 beneficios de adelantar tus facturas por cobrar con Ábaco.</p>
+            <p>
+              1: Liquidez en minutos. Olvida los procesos bancarios eternos; con
+              ábaco subes tu factura a nuestra plataforma y recibes tu dinero de
+              forma ágil.
+            </p>
+            <p>
+              2: Cero burocracia. Todo es 100% digital, diseñado para
+              empresarios que no tienen tiempo que perder.
+            </p>
+            <p>
+              3: Control total. Tú decides qué facturas adelantar y cuándo,
+              manteniendo el mando de tus finanzas.
+            </p>
+
+            <div className="pt-4 space-y-2">
+              <p>
+                Cierre 1: No esperes 30 o 60 días para cobrar lo que ya
+                vendiste. Regístrate hoy y uno de nuestros asesores te
+                contactará enseguida.
+              </p>
+              <p>
+                Cierre 2: No esperes 30 o 60 días para cobrar lo que ya
+                vendiste. Escríbenos a WhatsApp y obtén liquidez hoy.
+              </p>
+            </div>
+
+            <div className="pt-4 border-t border-slate-200 space-y-2">
+              <p className="font-semibold">Visuales:</p>
+              <p>
+                Miguel hablando, gráficos de texto para cada punto e imágenes de
+                la plataforma intercaladas. Con Subtitulos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Static */}
+      <section className="bg-white rounded-3xl shadow-xl p-10 space-y-6">
+        <h3 className="text-xl font-semibold text-indigo-800">Static</h3>
+
+        <div className="bg-slate-50 rounded-2xl p-6 space-y-2">
+          <p>Texto:</p>
+          <p>Grande: ¡Cobra tus facturas hoy mismo!</p>
+          <p>
+            Subtexto: No esperes 30, 60 o 90 días. Recibe el dinero de tus
+            cuentas por cobrar en horas.
+          </p>
+          <p>Botón (CTA): Ver más</p>
+
+          <div className="pt-4 border-t border-slate-200 space-y-2">
+            <p>Visual:</p>
+            <p>Usar un fondo limpio con el texto en un color que resalte.</p>
+            <p>
+              Una mano sosteniendo un celular con una notificación de "Pago
+              Recibido"
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Carrusel */}
+      <section className="bg-white rounded-3xl shadow-xl p-10 space-y-6">
+        <h3 className="text-xl font-semibold text-indigo-800">Carrusel</h3>
+
+        <div className="bg-slate-50 rounded-2xl p-6 space-y-3">
+          <p>Texto:</p>
+
+          <div className="space-y-2">
+            <p className="font-semibold">Slide 1:</p>
+            <p>Únete a las empresas que no esperan para crecer.</p>
+            <p>
+              Convierte tus facturas en capital inmediato y mantén tu impulso.
+            </p>
+          </div>
+
+          <div className="space-y-2 pt-4">
+            <p className="font-semibold">Slide 2:</p>
+            <p>El secreto de los negocios ágiles es su LIQUIDEZ. Con Ábaco:</p>
+            <p>✅ Gana más: Aprovecha descuentos por pronto pago.</p>
+            <p>✅ Anticípate: Adquiere inventario estratégico hoy.</p>
+            <p>✅ Lidera: Opera con total paz mental y seguridad.</p>
+          </div>
+
+          <div className="space-y-2 pt-4">
+            <p className="font-semibold">Slide 3:</p>
+            <p>
+              Sube tus facturas a nuestra plataforma y recibe tu efectivo en
+              horas.
+            </p>
+            <p>Sin burocracia ni filas. Solo tu dinero trabajando para ti.</p>
+          </div>
+
+          <div className="pt-4 border-t border-slate-200 space-y-2">
+            <p>Visuales:</p>
+            <p>
+              Slide 1: Empresario salvadoreño viendo gráficas de crecimiento.
+            </p>
+            <p>Slides 2: iconos limpios y elegantes por cada punto.</p>
+            <p>Slide 3: Mockup plataforma.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Descripción */}
+      <section className="bg-indigo-800 text-white rounded-3xl shadow-xl p-10 space-y-3">
+        <p>Descripción principal:</p>
+        <p>
+          No esperes 60 días para cobrar. Convierte tus facturas en liquidez hoy
+          mismo y mantén el impulso de tu negocio con Ábaco.
+        </p>
+        <p>*Financiamiento para Pymes. No créditos personales.</p>
+      </section>
+
+      {/* Campañas */}
+      <section className="bg-white rounded-3xl shadow-xl p-10 space-y-6">
+        <h3 className="text-xl font-semibold text-indigo-800">Campañas</h3>
+
+        <div className="grid md:grid-cols-3 gap-6 text-slate-700">
+          <div className="bg-slate-50 p-5 rounded-xl space-y-1">
+            <p className="font-semibold">Campana 1</p>
+            <p>Público Objetivo: Advantage</p>
+            <p>CTA Escribir Whatsapp</p>
+          </div>
+
+          <div className="bg-slate-50 p-5 rounded-xl space-y-1">
+            <p className="font-semibold">Campana 2</p>
+            <p>Público Objetivo: Lookalike</p>
+            <p>CTA Escribir Whatsapp</p>
+          </div>
+
+          <div className="bg-slate-50 p-5 rounded-xl space-y-1">
+            <p className="font-semibold">Campana 3</p>
+            <p>Público Objetivo: Intereses</p>
+            <p>CTA Escribir Whatsapp</p>
+          </div>
+
+          <div className="bg-slate-50 p-5 rounded-xl space-y-1">
+            <p className="font-semibold">Campana 1</p>
+            <p>Público Objetivo: Advantage</p>
+            <p>Llenar el formulario</p>
+          </div>
+
+          <div className="bg-slate-50 p-5 rounded-xl space-y-1">
+            <p className="font-semibold">Campana 2</p>
+            <p>Público Objetivo: Lookalike</p>
+            <p>Llenar el formulario</p>
+          </div>
+
+          <div className="bg-slate-50 p-5 rounded-xl space-y-1">
+            <p className="font-semibold">Campana 3</p>
+            <p>Público Objetivo: Intereses</p>
+            <p>Llenar Formulario</p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

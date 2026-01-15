@@ -4,33 +4,23 @@ import PrimaryButton from "../../components/PrimaryButton";
 export default function AdsStrategy() {
   return (
     <section className="max-w-7xl mx-auto px-6 py-12 space-y-12">
-      <div className="flex space-x-2.5">
-        <p>
-          <Link
-            className="text-white hover:text-blue-400 bg-indigo-800 p-2 px-4 rounded-2xl transition"
-            to="/ads-report"
-          >
-            Reporte
-          </Link>
-        </p>
-        <p>
-          <Link
-            className="text-white hover:text-blue-400 bg-indigo-800 p-2 px-4 rounded-2xl transition"
-            to="/ads-strategy"
-          >
-            Estrategia
-          </Link>
-        </p>
-        <p>
-          <Link
-            className="text-white hover:text-blue-400 bg-indigo-800 p-2 px-4 rounded-2xl transition"
-            to="/ads-tactics"
-          >
-            Tácticas
-          </Link>
-        </p>
-      </div>
-      <PrimaryButton to={"/ads-kpis"} texto={"KPIs"} />
+    {/* Navigation */}
+          <div className="flex flex-wrap gap-3">
+            {[
+              { to: "/ads-report", label: "Reporte" },
+              { to: "/ads-strategy", label: "Estrategia" },
+              { to: "/ads-tactics", label: "Tácticas" },
+            ].map((item) => (
+              <Link
+                key={item.to}
+                to={item.to}
+                className="bg-white text-slate-700 px-5 py-2 border border-indigo-500 rounded-3xl shadow hover:bg-indigo-700 transition"
+              >
+                {item.label}
+              </Link>
+            ))}
+            <PrimaryButton to={"/ads-kpis"} texto={"KPIs"} />
+          </div>
       <div className="min-h-screen from-black via-zinc-900 to-black">
         {/* Header */}
         <div className="flex justify-between items-start mb-16">

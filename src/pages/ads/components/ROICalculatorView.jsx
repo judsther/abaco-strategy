@@ -12,70 +12,69 @@ export default function ROICalculatorView() {
         </p>
       </header>
 
-      {/* Datos Base */}
       <section className="bg-white rounded-3xl shadow-xl p-10 space-y-6">
-        <h2 className="text-2xl font-bold text-slate-800">Datos Base</h2>
+        <h2 className="text-2xl font-bold text-slate-900">
+          ROI y CAC de Campañas Digitales
+        </h2>
+        <p className="text-slate-600">
+          Análisis desde Meta, AtomChat y HubSpot
+        </p>
 
         <div className="overflow-x-auto">
-          <table className="w-full text-sm border-collapse">
+          <table className="w-full border-collapse">
             <thead>
-              <tr className="bg-slate-100 text-slate-700">
-                <th className="p-3 text-left">Métrica</th>
-                <th className="p-3 text-left">Cantidad</th>
-                <th className="p-3 text-left">Fuente</th>
-                <th className="p-3 text-left">CAC</th>
-                <th className="p-3 text-left">Comentario</th>
+              <tr className="bg-indigo-800 text-white text-left">
+                <th className="py-3 px-4 rounded-tl-2xl">Métrica</th>
+                <th className="py-3 px-4">Cantidad</th>
+                <th className="py-3 px-4">Fuente</th>
+                <th className="py-3 px-4 rounded-tr-2xl">CPL</th>
               </tr>
             </thead>
-            <tbody className="divide-y">
-              <tr>
-                <td className="p-3 font-semibold">Inversión total</td>
-                <td className="p-3">$716.58</td>
-                <td className="p-3">—</td>
-                <td className="p-3">—</td>
-                <td className="p-3"></td>
+            <tbody className="divide-y divide-slate-200">
+              <tr className="hover:bg-slate-50 transition">
+                <td className="py-3 px-4 font-semibold">Inversión total</td>
+                <td className="py-3 px-4">$716.58</td>
+                <td className="py-3 px-4">-</td>
+                <td className="py-3 px-4">-</td>
               </tr>
-              <tr>
-                <td className="p-3 font-semibold">Medio valor</td>
-                <td className="p-3">1490</td>
-                <td className="p-3">Meta ADS</td>
-                <td className="p-3">$0.48</td>
-                <td className="p-3"></td>
+
+              <tr className="hover:bg-slate-50 transition">
+                <td className="py-3 px-4 font-semibold">Medio valor</td>
+                <td className="py-3 px-4">1490</td>
+                <td className="py-3 px-4">Meta ADS</td>
+                <td className="py-3 px-4">$ 0.48</td>
               </tr>
-              <tr>
-                <td className="p-3 font-semibold">Conversaciones WhatsApp</td>
-                <td className="p-3">644</td>
-                <td className="p-3">AtomChat</td>
-                <td className="p-3">$1.10</td>
-                <td className="p-3"></td>
+
+              <tr className="hover:bg-slate-50 transition">
+                <td className="py-3 px-4 font-semibold">
+                  Conversaciones WhatsApp
+                </td>
+                <td className="py-3 px-4">644</td>
+                <td className="py-3 px-4">AtomChat</td>
+                <td className="py-3 px-4">$ 1.10</td>
               </tr>
-              <tr>
-                <td className="p-3 font-semibold">Leads "alto valor"</td>
-                <td className="p-3">241</td>
-                <td className="p-3">Meta ADS</td>
-                <td className="p-3">$2.97</td>
-                <td className="p-3">Meta no rastreó las 644 conversaciones</td>
+
+              <tr className="hover:bg-slate-50 transition">
+                <td className="py-3 px-4 font-semibold">
+                  Asignadas a vendedor
+                </td>
+                <td className="py-3 px-4">62</td>
+                <td className="py-3 px-4">AtomChat</td>
+                <td className="py-3 px-4">$ 11.55</td>
               </tr>
-              <tr>
-                <td className="p-3 font-semibold">Asignadas a vendedor</td>
-                <td className="p-3">62</td>
-                <td className="p-3">AtomChat</td>
-                <td className="p-3">$11.55</td>
-                <td className="p-3"></td>
+
+              <tr className="hover:bg-slate-50 transition">
+                <td className="py-3 px-4 font-semibold">Leads Hubspot</td>
+                <td className="py-3 px-4">61</td>
+                <td className="py-3 px-4">Hubspot</td>
+                <td className="py-3 px-4">$ 11.74</td>
               </tr>
-              <tr>
-                <td className="p-3 font-semibold">Leads HubSpot</td>
-                <td className="p-3">61</td>
-                <td className="p-3">HubSpot</td>
-                <td className="p-3">$11.74</td>
-                <td className="p-3"></td>
-              </tr>
-              <tr>
-                <td className="p-3 font-semibold">Clientes cerrados</td>
-                <td className="p-3">5</td>
-                <td className="p-3">—</td>
-                <td className="p-3">$143.31</td>
-                <td className="p-3"></td>
+
+              <tr className="hover:bg-slate-50 transition">
+                <td className="py-3 px-4 font-semibold">Clientes cerrados</td>
+                <td className="py-3 px-4">5</td>
+                <td className="py-3 px-4"> </td>
+                <td className="py-3 px-4">$ 143.31</td>
               </tr>
             </tbody>
           </table>
@@ -129,10 +128,7 @@ export default function ROICalculatorView() {
           Ganancia neta: <span className="font-semibold">$867.47</span>
         </p>
         <p className="text-xl font-bold text-emerald-400">ROI: 121.06%</p>
-        <p className="text-sm opacity-90">
-          Por cada dólar invertido se ganó{" "}
-          <span className="font-semibold">$1.21</span> adicional.
-        </p>
+      
       </section>
     </div>
   );
