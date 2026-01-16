@@ -5,11 +5,12 @@ export default function PaidAdsKPIsView() {
   return (
     <div className="max-w-7xl mx-auto py-12 px-6 space-y-12">
       {/* Navigation */}
-            <AdsNavigationBtns/>
+      <AdsNavigationBtns />
       {/* Header */}
       <div className="text-start space-y-3">
         <h1 className="text-3xl font-semibold text-slate-900">
-          KPIs CLAVE PARA ESTRATEGIA DE PUBLICIDAD PAGADA
+          KPIs CLAVE PARA ESTRATEGIA DE PUBLICIDAD PAGADA (Según el número de
+          leads reportados por Atom en HubSpot 61 de 3 clientes)
         </h1>
         <p className="text-lg text-slate-600"></p>
       </div>
@@ -66,16 +67,16 @@ export default function PaidAdsKPIsView() {
       <Section
         title="4. KPIs de Conversión"
         items={[
-          ["CPL", "Costo / Lead", "(Llenarlo Isaac)"],
-          ["CPA", "Costo / Conversión", "(Llenarlo Isaac)"],
-          ["Conversion Rate Click -> Lead", "Conversiones / Clicks", "5.4"],
+          ["CPL", "Costo 716.58 / Lead 1,500", "$0.48"],
+          ["CPA", "Costo / Conversión", "$238.86"],
+          ["Conversion Rate Click -> Lead", "Conversiones (61) / Clicks (4,356)", "1.40%"],
           [
             "Conversion Rate Lead -> Cliente",
-            "Leads / Conversiones",
-            "2.9 (6% - 12%)",
+            "Conversiones (3) / Leads (61)",
+            "4.91% (6% - 12%)",
           ],
 
-          ["Cost per Qualified Lead", "CPL real", "(Llenar Isaac)"],
+          ["Cost per Qualified Lead", "CPL real", "716.68 / 61 Leads 11.74"],
           ["ROAS", "Revenue / Ad Spend", "(Llenar Isaac)"],
         ]}
       />

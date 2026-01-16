@@ -28,6 +28,7 @@ export default function ROICalculatorView() {
                 <th className="py-3 px-4">Cantidad</th>
                 <th className="py-3 px-4">Fuente</th>
                 <th className="py-3 px-4 rounded-tr-2xl">CPL</th>
+                <th className="py-3 px-4 rounded-tr-2xl">CPA</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-200">
@@ -72,9 +73,10 @@ export default function ROICalculatorView() {
 
               <tr className="hover:bg-slate-50 transition">
                 <td className="py-3 px-4 font-semibold">Clientes cerrados</td>
-                <td className="py-3 px-4">5</td>
-                <td className="py-3 px-4"> </td>
-                <td className="py-3 px-4">$ 143.31</td>
+                <td className="py-3 px-4">3</td>
+                <td className="py-3 px-4">-</td>
+                <td className="py-3 px-4">-</td>
+                <td className="py-3 px-4">$238.86</td>
               </tr>
             </tbody>
           </table>
@@ -131,16 +133,20 @@ export default function ROICalculatorView() {
       </section>
       {/* Hallazgos */}
       <section className="bg-linear-to-br from-slate-900 to-slate-800 text-white rounded-3xl p-10 space-y-4">
-        
         <h2 className="text-2xl font-bold">Hallazgos</h2>
         <p>
-          Desempeño de Herramientas: <span className="font-semibold">Datos Irregulares</span>
+          Desempeño de Herramientas:{" "}
+          <span className="font-semibold">Datos Irregulares</span>
         </p>
         <p>
-          Atom: <span className="font-semibold">Califica como lead a personas naturales que no califican.</span>
+          Atom:{" "}
+          <span className="font-semibold">
+            Califica como lead a personas naturales que no califican.
+          </span>
         </p>
         <p>
-          HubSpot: <span className="font-semibold">Guarda los leads desde Atom</span>
+          HubSpot:{" "}
+          <span className="font-semibold">Guarda los leads desde Atom</span>
         </p>
         {/* <p className="text-xl font-bold text-emerald-400">ROI: 121.06%</p> */}
       </section>
