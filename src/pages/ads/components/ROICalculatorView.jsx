@@ -4,17 +4,17 @@ export default function ROICalculatorView() {
       {/* Header */}
       <header className="space-y-3">
         <h1 className="text-4xl font-bold text-slate-900">
-          Calculadora de ROI — Campañas Digitales
+          ROI — Campañas Digitales
         </h1>
         <p className="text-slate-600 max-w-3xl">
           Evaluación financiera del desempeño de inversión publicitaria basada
-          en datos reales confirmados desde Meta, AtomChat y HubSpot.
+          en datos reportados desde Meta, AtomChat y HubSpot.
         </p>
       </header>
 
       <section className="bg-white rounded-3xl shadow-xl p-10 space-y-6">
         <h2 className="text-2xl font-bold text-slate-900">
-          ROI y CAC de Campañas Digitales
+          ROI de Campañas Digitales
         </h2>
         <p className="text-slate-600">
           Análisis desde Meta, AtomChat y HubSpot
@@ -128,7 +128,21 @@ export default function ROICalculatorView() {
           Ganancia neta: <span className="font-semibold">$867.47</span>
         </p>
         <p className="text-xl font-bold text-emerald-400">ROI: 121.06%</p>
-      
+      </section>
+      {/* Hallazgos */}
+      <section className="bg-linear-to-br from-slate-900 to-slate-800 text-white rounded-3xl p-10 space-y-4">
+        
+        <h2 className="text-2xl font-bold">Hallazgos</h2>
+        <p>
+          Desempeño de Herramientas: <span className="font-semibold">Datos Irregulares</span>
+        </p>
+        <p>
+          Atom: <span className="font-semibold">Califica como lead a personas naturales que no califican.</span>
+        </p>
+        <p>
+          HubSpot: <span className="font-semibold">Guarda los leads desde Atom</span>
+        </p>
+        {/* <p className="text-xl font-bold text-emerald-400">ROI: 121.06%</p> */}
       </section>
     </div>
   );

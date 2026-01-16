@@ -11,10 +11,10 @@ export default function AdsReport() {
 
       <header className="space-y-3">
         <h1 className="text-4xl font-semibold text-slate-900">
-          Reporte de Rendimiento y Leads Reales
+          Reporte de Rendimiento y Leads 
         </h1>
         <p className="text-slate-600">
-          Ábaco Capital — Factoraje B2B · Sep–Dic 2025 · Generado: 2026-01-05
+          Ábaco Capital — Factoraje B2B · Sep–Dic 2025 ·
         </p>
       </header>
 
