@@ -1,27 +1,14 @@
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import ROICalculatorView from "./components/ROICalculatorView";
-import PrimaryButton from "../../components/PrimaryButton";
+import AdsNavigationBtns from "./AdsNavigationBtns";
 
 export default function AdsReport() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-12 space-y-10">
       {/* Navigation */}
-      <div className="flex flex-wrap gap-3">
-        {[
-          { to: "/ads-report", label: "Reporte" },
-          { to: "/ads-strategy", label: "Estrategia" },
-          { to: "/ads-tactics", label: "Tácticas" },
-        ].map((item) => (
-          <Link
-            key={item.to}
-            to={item.to}
-            className="bg-white text-slate-700 px-5 py-2 border border-indigo-500 rounded-3xl shadow hover:bg-indigo-700 transition"
-          >
-            {item.label}
-          </Link>
-        ))}
-        <PrimaryButton to={"/ads-kpis"} texto={"KPIs"} />
-      </div>
+      
+<AdsNavigationBtns/>
+
       <header className="space-y-3">
         <h1 className="text-4xl font-semibold text-slate-900">
           Reporte de Rendimiento y Leads Reales
@@ -36,9 +23,11 @@ export default function AdsReport() {
       {/* ACTIVOS PUBLICITARIOS */}
       <div className="bg-white border rounded-xl shadow p-8 space-y-6">
         <h3 className="text-2xl font-bold text-slate-900">
-          Análisis Profundo de Activos Publicitarios (Top Performers)
+          Análisis de Activos Publicitarios (Leads según Meta)
         </h3>
-
+        <h4 className="text-xl font-bold text-slate-700">
+          Click en el CTA - WhatsApp
+        </h4>
         <div className="overflow-x-auto">
           <table className="min-w-full border rounded-lg overflow-hidden">
             <thead className="bg-slate-100 text-slate-600">
