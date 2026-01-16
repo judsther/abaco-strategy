@@ -21,6 +21,7 @@ export default function AdsStrategy() {
             ))}
             <PrimaryButton to={"/ads-kpis"} texto={"KPIs"} />
           </div>
+          
       <div className="min-h-screen from-black via-zinc-900 to-black">
         {/* Header */}
         <div className="flex justify-between items-start mb-16">
