@@ -1,14 +1,15 @@
 import { NavLink } from "react-router-dom";
-import PrimaryButton from "../../components/PrimaryButton";
+import PrimaryButton from "../../../components/PrimaryButton";
 
-export default function AdsNavigationBtns() {
+
+export default function OrganicNavigationBtns() {
   return (
     <div>
       <div className="flex flex-wrap gap-3">
         {[
-          { to: "/ads-report", label: "Análisis" },
-          { to: "/ads-strategy", label: "Estrategia (OKR)" },
-          { to: "/ads-tactics", label: "Plan de Acción" },
+          { to: "/organic-analisis", label: "Análisis" },
+          { to: "/organic-strategy", label: "Estrategia" },
+          { to: "/organic-tactics-calendar", label: "Plan de Acción" },
         ].map((item) => (
           <NavLink
             key={item.to}
@@ -29,7 +30,7 @@ export default function AdsNavigationBtns() {
         ))}
 
         {/* KPIs mantiene el mismo comportamiento */}
-        <PrimaryButton to="/ads-kpis" texto="KPIs" />
+        <PrimaryButton to="/organic-kpis" texto="KPIs" />
       </div>
     </div>
   );

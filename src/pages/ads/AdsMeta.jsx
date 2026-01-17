@@ -5,16 +5,16 @@ export default function AdsMeta() {
     <div className="max-w-7xl mx-auto px-6 py-12 space-y-14">
       {/* Header */}
       <div className="border-l-4 border-indigo-800 pl-6 space-y-1">
-        <h1 className="text-4xl font-extrabold text-slate-900">Ads Q1 Mes 1</h1>
-        <p className="text-slate-600 text-lg">Presupuesto: —</p>
+        <h1 className="text-4xl font-extrabold text-slate-900">Ads Campaigns Q1</h1>
+        <p className="text-slate-600 text-lg">Presupuesto: $2,000/mes</p>
       </div>
 
       {/* Objetivos */}
       <section className="bg-white rounded-3xl shadow-xl p-10 space-y-4">
         <h2 className="text-2xl font-bold text-indigo-800">Objetivos</h2>
         <div className="grid md:grid-cols-2 gap-6 text-slate-700">
-          <p>Generación de Leads: ---</p>
-          <p>Leads Calificados: ---</p>
+          <p>Generación de Leads: 1,800</p>
+          <p>Clientes nuevos: 18</p>
         </div>
       </section>
 

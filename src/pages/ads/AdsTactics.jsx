@@ -6,7 +6,7 @@ import AdsMeta from "./AdsMeta";
 import AdsNavigationBtns from "./AdsNavigationBtns";
 
 export default function AdsTactics() {
-    const [active, setActive] = useState("email");
+    const [active, setActive] = useState("adsmeta");
   return (
     <div className="max-w-7xl mx-auto px-6 py-12 space-y-14">
       {/* Navigation */}

@@ -6,7 +6,7 @@ export default function MetaCalendar() {
       {/* ================== ENERO ================== */}
       <WeekBlock title="Facebook / Instagram - Mes 1 Q1">
         <CalendarItem
-          day="Lunes"
+          day="Lunes de Videos"
           time="IG: 11 AM / FB 6 PM"
           platform="Instagram / Facebook"
           pillar="1. Liquidez Inteligente & Operativa"
@@ -32,7 +32,7 @@ export default function MetaCalendar() {
         />
 
         <CalendarItem
-          day="Martes"
+          day="Martes de Carrousels"
           time="6 PM"
           platform="Instagram / Facebook"
           pillar="Liquidez Inteligente & Operativa"
@@ -86,7 +86,7 @@ Abrir operaciones en nuevas ciudades."
         />
 
         <CalendarItem
-          day="Jueves"
+          day="Jueves de Dato Curioso"
           time="6 PM"
           platform="Instagram / Facebook"
           pillar="Datos Curiosos"

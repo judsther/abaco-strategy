@@ -29,18 +29,26 @@ Liderazgo Fintech & Innovación
           pillar="Crecimiento Ágil & Estratégico "
           format="Video vertical (30s - 1min)"
           contenido1={`
+            ¿Cuándo utilizar el factoraje?
+            
             `}
           caption1={`
             `}
-          contenido2={`
+            contenido2={`
+              ¿Cómo beneficiarse del factoraje?
+
             `}
-          caption2={`
-            `}
-          contenido3={`
+            caption2={`
+              `}
+              contenido3={`
+                La forma correcta de financiar tu crecimiento con factoraje.
+
             `}
           caption3={`
             `}
           contenido4={`
+            Diferencias entre el factoraje tradicional y el factoraje 100% digital.
+
             `}
           caption4={`
             `}
@@ -68,5 +76,5 @@ Liderazgo Fintech & Innovación
         </a>
       </p>
     </div>
-  );
+  ); 
 }

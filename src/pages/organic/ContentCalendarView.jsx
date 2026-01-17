@@ -1,17 +1,18 @@
 import { useState } from "react";
-import PrimaryButton from "../../components/PrimaryButton";
+
 
 import MetaCalendar from "./components/MetaCalendar";
 import LinkedInCalendar from "./components/LinkedInCalendar";
 import YTTTCalendar from "./components/YTTTCalendar";
 import TabButton from "./components/TabButton";
+import OrganicNavigationBtns from "./components/OrganicNavigationBtns";
 
 export default function ContentCalendarView() {
   const [active, setActive] = useState("meta");
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 space-y-16">
-      <PrimaryButton to={"/organic-tactics"} texto={"< Back"} />
+    <div className="max-w-6xl mx-auto py-14 px-6 space-y-12">
+      <OrganicNavigationBtns />
 
       {/* Header */}
       <header className="space-y-4">
@@ -19,11 +20,13 @@ export default function ContentCalendarView() {
           Calendario de Contenidos — Q1 2026
         </h2>
         <p className="text-slate-600 max-w-4xl">
-          El siguiente calendario presenta una programación semanal por mes (4 semanas), ilustrando la aplicación de los pilares de
-          contenido, formatos y adaptaciones por canal. Cada semana garantiza un
-          mínimo de 3 publicaciones en Meta y LinkedIn y contenido especial en los nuevos canales Youtube y TikTok,  priorizando la
-          reutilización inteligente de contenidos de alta calidad adaptados a la
-          naturaleza de cada plataforma.
+          El siguiente calendario presenta una programación semanal por mes (4
+          semanas), ilustrando la aplicación de los pilares de contenido,
+          formatos y adaptaciones por canal. Cada semana garantiza un mínimo de
+          3 publicaciones en Meta y LinkedIn y contenido especial en los nuevos
+          canales Youtube y TikTok, priorizando la reutilización inteligente de
+          contenidos de alta calidad adaptados a la naturaleza de cada
+          plataforma.
         </p>
 
         {/* Selector de canal */}

@@ -32,46 +32,46 @@ export default function Intro() {
 
               {/* Flujo Estratégico */}
               <section>
-                <h3 className="text-xl font-semibold text-slate-800 mb-6">
+                <h3 className="text-md font-semibold text-slate-800 mb-6">
                   Flujo de cada Ruta.
                 </h3>
 
                 <ul className="space-y-4 border-l-2 border-indigo-200 pl-6">
                   <li>
-                    <h4 className="font-semibold text-slate-900">
+                    <h4 className="text-sm font-semibold text-slate-900">
                       1. Análisis
                     </h4>
-                    <p className="text-slate-700">
+                    <p className="text-sm text-slate-700">
                       Evaluación del desempeño histórico de contenido y
                       publicidad para detectar oportunidades reales.
                     </p>
                   </li>
 
                   <li>
-                    <h4 className="font-semibold text-slate-900">
+                    <h4 className="text-sm font-semibold text-slate-900">
                       2. Nueva Estrategia (OKR)
                     </h4>
-                    <p className="text-slate-700">
+                    <p className="text-sm text-slate-700">
                       Definición de objetivos claros y medibles alineados al
                       crecimiento del negocio.
                     </p>
                   </li>
 
                   <li>
-                    <h4 className="font-semibold text-slate-900">
+                    <h4 className="text-sm font-semibold text-slate-900">
                       3. Plan de Acción
                     </h4>
-                    <p className="text-slate-700">
+                    <p className="text-sm text-slate-700">
                       Tácticas y tareas concretas que guían la ejecución diaria
                       para alcanzar los objetivos.
                     </p>
                   </li>
 
                   <li>
-                    <h4 className="font-semibold text-slate-900">
+                    <h4 className="text-sm font-semibold text-slate-900">
                       4. KPIs de Seguimiento
                     </h4>
-                    <p className="text-slate-700">
+                    <p className="text-sm text-slate-700">
                       Indicadores clave que permiten medir avances y optimizar
                       decisiones en tiempo real.
                     </p>

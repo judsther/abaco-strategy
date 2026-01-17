@@ -10,9 +10,13 @@ export default function PaidAdsKPIsView() {
       {/* Header */}
       <div className="text-start space-y-3">
         <h1 className="text-3xl font-semibold text-slate-900">
-          KPIs CLAVE PARA ESTRATEGIA DE PUBLICIDAD PAGADA (Según el número de
-          leads reportados por Atom en HubSpot 61 de 3 clientes)
+          Monitor de Rendimiento y Conversión: Seguimiento de Metas y Baseline
+          Trimestral
         </h1>
+        <h4 className="text-md text-slate-400">
+          Análisis histórico Q4 (3 clientes de 61 leads calificados reportados por Atom) y
+          seguimiento en tiempo real Q1.
+        </h4>
         <p className="text-lg text-slate-600"></p>
       </div>
 
@@ -46,7 +50,7 @@ export default function PaidAdsKPIsView() {
 
       {/* 2 */}
       <KpiSection
-        title="2. KPIs de Atención & Interés"
+        title="KPIs de Atención & Interés"
         subtitle="¿El mensaje engancha?"
         rows={[
           {
@@ -69,7 +73,7 @@ export default function PaidAdsKPIsView() {
 
       {/* 3 */}
       <KpiSection
-        title="3. KPIs de Consideración"
+        title="KPIs de Consideración"
         subtitle="¿El usuario evalúa el valor de la propuesta?"
         rows={[
           {
@@ -97,7 +101,7 @@ export default function PaidAdsKPIsView() {
 
       {/* 4 */}
       <KpiSection
-        title="4. KPIs de Conversión"
+        title="KPIs de Conversión"
         subtitle="¿La inversión genera resultados de negocio?"
         rows={[
           {
@@ -134,13 +138,30 @@ export default function PaidAdsKPIsView() {
       />
 
       {/* 5 */}
-      <Section
-        title="5. KPIs de Escalabilidad"
-        items={[
-          ["LTV / CAC", "Salud financiera"],
-          ["Payback Period", "Tiempo para recuperar inversión"],
-          ["Incremental Lift", "Impacto real del ads"],
-          ["Attribution Share", "Rol de cada canal"],
+      <KpiSection
+        title="KPIs de Escalabilidad"
+        subtitle="¿El modelo es sostenible y escalable en el tiempo?"
+        rows={[
+          {
+            kpi: "LTV / CAC",
+            description: "Salud financiera del modelo de adquisición",
+            q4: "—",
+          },
+          {
+            kpi: "Payback Period",
+            description: "Tiempo necesario para recuperar la inversión",
+            q4: "—",
+          },
+          {
+            kpi: "Incremental Lift",
+            description: "Impacto incremental real de la pauta",
+            q4: "—",
+          },
+          {
+            kpi: "Attribution Share",
+            description: "Contribución de cada canal al resultado final",
+            q4: "—",
+          },
         ]}
       />
     </div>

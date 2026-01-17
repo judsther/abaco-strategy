@@ -12,6 +12,7 @@ import AdsReport from "./pages/ads/AdsReport";
 import AdsStrategy from "./pages/ads/AdsStrategy";
 import ContentCalendarView from "./pages/organic/ContentCalendarView";
 import PaidAdsKPIsView from "./pages/ads/PaidAdsKPIsView";
+import OrganicKpis from "./pages/organic/OrganicKpis";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <Route path="/organic-analisis" element={<OrganicAnalysis />} />
         <Route path="/organic-strategy" element={<OrganicStrategy />} />
         <Route path="/organic-tactics" element={<OrganicTactics />} />
+        <Route path="/organic-kpis" element={<OrganicKpis />} />
+
         <Route
           path="/organic-tactics-calendar"
           element={<ContentCalendarView />}
