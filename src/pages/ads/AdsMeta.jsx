@@ -76,7 +76,7 @@ export default function AdsMeta() {
             Subtexto: No esperes 30, 60 o 90 días. Recibe el dinero de tus
             cuentas por cobrar en horas.
           </p>
-          <p>Botón (CTA): Ver más</p>
+         
 
           <div className="pt-4 border-t border-slate-200 space-y-2">
             <p>Visual:</p>

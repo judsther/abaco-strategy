@@ -1,144 +1,116 @@
 
 import AdsNavigationBtns from "./AdsNavigationBtns";
+import AcquisitionStrategyQ1 from "./components/AcquisitionStrategyQ1";
 
 export default function AdsStrategy() {
   return (
     <section className="max-w-7xl mx-auto px-6 py-12 space-y-12">
-    {/* Navigation */}
-         <AdsNavigationBtns/>
-          
-      <div className="min-h-screen from-black via-zinc-900 to-black">
-        {/* Header */}
-        <div className="flex justify-between items-start mb-16">
-          <div>
-            <h1 className="text-4xl font-semibold">OKR Growth Q1 2026</h1>
-            <p className="text-slate-600 mt-1">Aceleración y Expansión</p>
-          </div>
-          <div className="text-xs  border border-zinc-700 px-4 py-1 rounded-full">
-            2026-01-05
-          </div>
-        </div>
+      {/* Navigation */}
+      <AdsNavigationBtns />
 
-        {/* Misión Crítica */}
-        <section className="mb-20 max-w-4xl">
-          <p className="text-xs tracking-widest text-zinc-400 mb-3">
-            MISIÓN CRÍTICA
-          </p>
-          <h2 className="text-2xl leading-relaxed text-zinc-700">
-            El área de Growth (Comercial, Ventas y Marketing) tiene la misión
-            crítica de validar un modelo de adquisición de clientes que sea
-            escalable, rentable y esté preparado para la expansión.
-          </h2>
-        </section>
+      <div className="px-6 w-full">
+        <div className="bg-white rounded-3xl shadow-sm border border-slate-200 p-10 space-y-10">
+          {/* Header */}
+          <header>
+            <h1 className="text-4xl font-semibold text-slate-900">
+              Objetivo Estratégico
+            </h1>
+          </header>
 
-        {/* Objetivos */}
-        <div className="mb-16">
-          <p className="text-zinc-700 mb-6">Los objetivos en el Q1 2026 son:</p>
-
-          <div className="grid grid-cols-3 gap-10 text-sm">
-            {[
-              [
-                "01",
-                "Escalar la Adquisición",
-                "Superar el ritmo histórico y sentar las bases para los 185 nuevos clientes del año.",
-              ],
-              [
-                "02",
-                "Preparar la Demanda de Capital",
-                "Generar un pipeline de clientes robusto para absorber el nuevo fondo de Accial.",
-              ],
-              [
-                "03",
-                "Expansión Regional",
-                "Validar la operación y la adquisición de clientes en Guatemala.",
-              ],
-            ].map(([id, title, desc]) => (
-              <div key={id} className="space-y-2">
-                <p className="text-indigo-400">{id}</p>
-                <p className="font-medium">{title}</p>
-                <p className="text-zinc-700">{desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Growth - Marketing */}
-        <div className="mb-10 flex justify-between items-center">
-          <div>
-            <h2 className="text-3xl font-semibold">Growth — Marketing</h2>
-            <p className="text-zinc-700 mt-1">
-              Generación de Demanda y Marca Q1 2026
+          {/* Objetivo */}
+          <section className="bg-slate-50 rounded-2xl p-6">
+            <h2 className="text-xl font-semibold text-slate-900 mb-3">
+              Objetivo
+            </h2>
+            <p className="text-slate-700 leading-relaxed">
+              Optimizar el ecosistema de captación digital de leads de Ábaco
+              para establecer una base de medición confiable que garantice el
+              escalamiento de nuevos clientes.
             </p>
-          </div>
-          <div className="text-xs text-zinc-700 border border-zinc-700 px-4 py-1 rounded-full">
-            2026-01-05
-          </div>
-        </div>
+          </section>
 
-        {/* Cards */}
-        <div className="grid grid-cols-2 gap-8">
-          <Card
-            title="Validar modelo de adquisición escalable"
-            body="Escalar generación de demanda: Incrementar leads calificados de ~1,500 a ~2,200 en Q1 (+47% QoQ) y elevar tasa de conversión funnel a ~1%."
-            target="~2,200 leads calificados, conversión ~1% lead-to-client."
-            why="Abastecer a Ventas para lograr 47 clientes nuevos. Validar que Marketing puede escalar rentablemente."
-          />
+          {/* Key Results */}
+          <section>
+            <h2 className="text-2xl font-semibold text-slate-900 mb-6">
+              Key Results (KRs)
+            </h2>
 
-          <Card
-            title="Preparar la demanda para el fondeo Accial"
-            body="Orquestar campañas para construir un banco de prospectos precalificados con potencial de crédito agregado ≥90% de la línea Accial."
-            target="Demand generation coverage ≥90% de la línea Accial."
-            why="Evitar dinero ocioso. Asegurar clientes listos cuando se abre el grifo del fondeo."
-            accent
-          />
+            <div className="space-y-6">
+              {/* KR1 */}
+              <div className="border border-slate-200 rounded-2xl p-6">
+                <h3 className="font-semibold text-slate-900 mb-2">
+                  KR1 (Infraestructura):
+                </h3>
+                <p className="text-slate-700 leading-relaxed">
+                  Lograr el 100% de la optimización de filtros y sincronización
+                  en la integración Meta-Atom-HubSpot para asegurar trazabilidad
+                  total.
+                </p>
+              </div>
 
-          <Card
-            title="Acompañar la expansión a Guatemala"
-            body="Generar al menos 20 prospectos calificados originados por marketing local y documentar canales/mensajes más efectivos."
-            target="≥20 leads calificados GT, Brand Launch en mercado local."
-            why="Validar canales de adquisición en nueva geografía. No basta con replicar lo de El Salvador."
-          />
+              {/* KR2 */}
+              <div className="border border-slate-200 rounded-2xl p-6">
+                <h3 className="font-semibold text-slate-900 mb-2">
+                  KR2 (Experimentación):
+                </h3>
+                <p className="text-slate-700 leading-relaxed">
+                  Validar la eficiencia de 6 embudos experimentales (Públicos
+                  Advantage, LAL e Intereses vs. Landing Page y WhatsApp) para
+                  identificar el camino con mejor costo de adquisición (CAC).
+                </p>
+              </div>
 
-          <Card
-            title="Maximizar beneficio de marca (Accial/Oiko)"
-            body="Lograr al menos una mención destacada en prensa o medios de negocios sobre los acuerdos de fondeo antes de finalizar Q1."
-            target="1+ publicación en prensa Tier-1, actualización de activos de marca."
-            why="Capitalizar la confianza institucional para atraer clientes grandes y futuros inversionistas."
-          />
+              {/* KR3 */}
+              <div className="border border-slate-200 rounded-2xl p-6">
+                <h3 className="font-semibold text-slate-900 mb-2">
+                  KR3 (Baseline):
+                </h3>
+                <p className="text-slate-700 leading-relaxed">
+                  Definir el conversion rate real de las etapas: Lead → Lead
+                  Calificado → Cliente, basado en los resultados de la
+                  experimentación del Q1.
+                </p>
+              </div>
+
+              {/* KR4 */}
+              <div className="border border-slate-200 rounded-2xl p-6">
+                <h3 className="font-semibold text-slate-900 mb-2">
+                  KR3 (Resultado)
+                </h3>
+                <p className="text-slate-700 leading-relaxed">
+                  Lograr un acumulado de 18 desembolsos al cierre del Q1,
+                  apuntándole a una tasa de conversión mínima del 1% sobre el
+                  tráfico generado en febrero y marzo. (meta proporcional al 40%
+                  de la cuota anual).
+                </p>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
+      <AcquisitionStrategyQ1/>
     </section>
+
+  
   );
 }
 
-function Card({ title, body, target, why, accent }) {
-  return (
-    <div
-      className={`rounded-2xl p-6 backdrop-blur bg-white/5 border ${
-        accent ? "border-indigo-500/30" : "border-white/10"
-      } shadow-xl`}
-    >
-      <h3 className="text-lg font-medium mb-2">{title}</h3>
-      <p className="text-zinc-700 mb-6">{body}</p>
 
-      <div className="text-xs space-y-1">
-        <p>
-          <span className="text-zinc-700">TARGET</span> — {target}
-        </p>
-        <p>
-          <span className="text-zinc-700">WHY</span> — {why}
-        </p>
-      </div>
-    </div>
-  );
-}
+// O1: Fortalecer la infraestructura tecnológica de captación para asegurar la integridad y calidad de los datos de entrada.
 
-// function Block({ title, children }) {
-//   return (
-//     <div className="bg-white border rounded-xl p-8 shadow space-y-4">
+// O2: Descifrar el potencial real de conversión del producto Ábaco para establecer una línea base de crecimiento basada en evidencia.
 
-//       <h2 className="text-xl font-bold">{title}</h2>
-//       {children}
-//     </div>
-//   );
-// }
+// O3: Escalar la adquisición de clientes a través de pauta digital para alcanzar la cuota de contribución al crecimiento anual de la empresa.
+
+/**
+Objetivo: 
+ 
+Optimizar el ecosistema de captación digital de Ábaco para establecer una base de medición confiable que garantice el escalamiento de nuevos clientes.
+
+Key Results (KRs)
+KR1 (Técnico): Lograr el 100% de la implementación y optimización de filtros en la integración Meta-Atom-HubSpot durante el primer mes para eliminar el ruido en la data.
+
+KR2 (Analítico): Definir la tasa de conversión baseline de los tres estadios del funnel (Lead → Lead Calificado → Cliente) con datos reales del Q1.
+
+KR3 (Resultado): Alcanzar 18 nuevos clientes con desembolso provenientes de pauta en Meta Business (meta proporcional al 40% de la cuota anual).
+ */

@@ -6,16 +6,14 @@ export default function AdsReport() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-12 space-y-10">
       {/* Navigation */}
-      
-<AdsNavigationBtns/>
+
+      <AdsNavigationBtns />
 
       <header className="space-y-3">
         <h1 className="text-4xl font-semibold text-slate-900">
-          Reporte de Rendimiento y Leads 
+          Reporte de Rendimiento según Leads
         </h1>
-        <p className="text-slate-600">
-          Ábaco Capital — Factoraje B2B · Sep–Dic 2025 ·
-        </p>
+        <p className="text-slate-600">Sep–Dic 2025</p>
       </header>
 
       <Outlet />
@@ -23,7 +21,7 @@ export default function AdsReport() {
       {/* ACTIVOS PUBLICITARIOS */}
       <div className="bg-white border rounded-xl shadow p-8 space-y-6">
         <h3 className="text-2xl font-bold text-slate-900">
-          Análisis de Activos Publicitarios (Leads según Meta)
+          Top Performers de Activos Publicitarios (Leads según Meta)
         </h3>
         <h4 className="text-xl font-bold text-slate-700">
           Click en el CTA - WhatsApp
@@ -110,6 +108,39 @@ export default function AdsReport() {
       </section>
 
       <ROICalculatorView />
+
+      {/* Hallazgos */}
+      <section className="border-t border-t-indigo-800 text-slate p-10 space-y-4">
+        <h2 className="text-2xl font-bold">Hallazgos</h2>
+        <p>
+          Desempeño de Herramientas:{" "}
+          <span className="font-semibold">Datos Irregulares.</span>
+        </p>
+        <p>
+          Atom:{" "}
+          <span className="font-semibold">
+            Califica como lead a personas naturales que no califican.
+          </span>
+        </p>
+        <p>
+          HubSpot:{" "}
+          <span className="font-semibold">Guarda los leads desde Atom.</span>
+        </p>
+        <p>
+          Filtros:{" "}
+          <span className="font-semibold">
+            Problema de filtrado desde el anuncio hasta el proceso de
+            calificación automatizada.
+          </span>
+        </p>
+        <p>
+          Mucha fricción antes de llegar al cliente:{" "}
+          <span className="font-semibold">
+            Tiempo perdido en llamadas y mensajes de los KAMs con personas que no aplican.
+          </span>
+        </p>
+        {/* <p className="text-xl font-bold text-emerald-400">ROI: 121.06%</p> */}
+      </section>
     </div>
   );
 }

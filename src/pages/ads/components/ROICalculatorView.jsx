@@ -1,10 +1,10 @@
 export default function ROICalculatorView() {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-14 space-y-14">
+    <div className=" py-14 space-y-14">
       {/* Header */}
       <header className="space-y-3">
         <h1 className="text-4xl font-bold text-slate-900">
-          ROI — Campañas Digitales
+          Reporte Financiero Campañas Digitales
         </h1>
         <p className="text-slate-600 max-w-3xl">
           Evaluación financiera del desempeño de inversión publicitaria basada
@@ -14,7 +14,7 @@ export default function ROICalculatorView() {
 
       <section className="bg-white rounded-3xl shadow-xl p-10 space-y-6">
         <h2 className="text-2xl font-bold text-slate-900">
-          ROI de Campañas Digitales
+          CPL y CPA de Campañas Digitales
         </h2>
         <p className="text-slate-600">
           Análisis desde Meta, AtomChat y HubSpot
@@ -27,7 +27,7 @@ export default function ROICalculatorView() {
                 <th className="py-3 px-4 rounded-tl-2xl">Métrica</th>
                 <th className="py-3 px-4">Cantidad</th>
                 <th className="py-3 px-4">Fuente</th>
-                <th className="py-3 px-4 rounded-tr-2xl">CPL</th>
+                <th className="py-3 px-4">CPL</th>
                 <th className="py-3 px-4 rounded-tr-2xl">CPA</th>
               </tr>
             </thead>
@@ -131,25 +131,7 @@ export default function ROICalculatorView() {
         </p>
         <p className="text-xl font-bold text-emerald-400">ROI: 121.06%</p>
       </section>
-      {/* Hallazgos */}
-      <section className="bg-linear-to-br from-slate-900 to-slate-800 text-white rounded-3xl p-10 space-y-4">
-        <h2 className="text-2xl font-bold">Hallazgos</h2>
-        <p>
-          Desempeño de Herramientas:{" "}
-          <span className="font-semibold">Datos Irregulares</span>
-        </p>
-        <p>
-          Atom:{" "}
-          <span className="font-semibold">
-            Califica como lead a personas naturales que no califican.
-          </span>
-        </p>
-        <p>
-          HubSpot:{" "}
-          <span className="font-semibold">Guarda los leads desde Atom</span>
-        </p>
-        {/* <p className="text-xl font-bold text-emerald-400">ROI: 121.06%</p> */}
-      </section>
+      
     </div>
   );
 }

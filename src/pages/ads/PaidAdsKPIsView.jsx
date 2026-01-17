@@ -1,5 +1,6 @@
 
 import AdsNavigationBtns from "./AdsNavigationBtns";
+import KpiSection from "./components/KpiSection";
 
 export default function PaidAdsKPIsView() {
   return (
@@ -16,68 +17,119 @@ export default function PaidAdsKPIsView() {
       </div>
 
       {/* 1 */}
-      <Section
+      <KpiSection
         title="KPIs de Entrega & Alcance"
         subtitle="¿La plataforma está entregando bien los anuncios?"
-        items={[
-          [
-            "Reach",
-            "Personas únicas alcanzadas",
-            "27,854",
-            "Crecimiento constante",
-          ],
-          ["Impressions", "Exposición total", "174,577"],
-          [
-            "Frequency",
-            "Veces promedio que alguien ve el anuncio",
-            "6.27 (2 - 4 saludable)",
-            "1.5 – 3.5",
-          ],
-          ["CPM", "Costo por 1,000 impresiones", "$3.97"],
+        rows={[
+          {
+            kpi: "Reach",
+            description: "Personas únicas alcanzadas",
+            q4: "27,854 (crecimiento constante)",
+          },
+          {
+            kpi: "Impressions",
+            description: "Exposición total",
+            q4: "174,577",
+          },
+          {
+            kpi: "Frequency",
+            description: "Veces promedio que alguien ve el anuncio",
+            q4: "6.27 (2–4 saludable)",
+          },
+          {
+            kpi: "CPM",
+            description: "Costo por 1,000 impresiones",
+            q4: "$3.97",
+          },
         ]}
       />
 
       {/* 2 */}
-      <Section
+      <KpiSection
         title="2. KPIs de Atención & Interés"
         subtitle="¿El mensaje engancha?"
-        items={[
-          ["CTR", "Clicks / Impressions", "2.41%  (1.2 – 2.0% (B2B)"],
-          [
-            "Hook Rate (video)",
-            "Visualizaciones 3s / Impressions",
-            "96% (> 25%)",
-          ],
-          //["Hold Rate", "Retención de video", "> 30–40%"],
+        rows={[
+          {
+            kpi: "CTR",
+            description: "Clicks / Impressions",
+            q4: "2.41% (Benchmark B2B: 1.2 – 2.0%)",
+          },
+          {
+            kpi: "Hook Rate (Video)",
+            description: "Visualizaciones ≥ 3s / Impressions",
+            q4: "96% (Óptimo > 25%)",
+          },
+          {
+            kpi: "Hold Rate (Video)",
+            description: "Retención promedio del video",
+            q4: "— (no medido en Q4)",
+          },
         ]}
       />
 
       {/* 3 */}
-      <Section
+      <KpiSection
         title="3. KPIs de Consideración"
-        items={[
-          ["Landing Page View Rate", "Calidad del tráfico"],
-          ["Time on Page", "Interés real"],
-          ["Scroll Depth", "Lectura del mensaje"],
-          ["Engagement Post-Click", "Valor del contenido"],
+        subtitle="¿El usuario evalúa el valor de la propuesta?"
+        rows={[
+          {
+            kpi: "Landing Page View Rate",
+            description: "Calidad del tráfico después del click",
+            q4: "—",
+          },
+          {
+            kpi: "Time on Page",
+            description: "Nivel de interés real en el contenido",
+            q4: "—",
+          },
+          {
+            kpi: "Scroll Depth",
+            description: "Qué tanto se consume el mensaje",
+            q4: "—",
+          },
+          {
+            kpi: "Engagement Post-Click",
+            description: "Interacciones luego de llegar a la landing",
+            q4: "—",
+          },
         ]}
       />
 
       {/* 4 */}
-      <Section
+      <KpiSection
         title="4. KPIs de Conversión"
-        items={[
-          ["CPL", "Costo 716.58 / Lead 1,500", "$0.48"],
-          ["CPA", "Costo / Conversión", "$238.86"],
-          ["Conversion Rate Click -> Lead", "Conversiones (61) / Clicks (4,356)", "1.40%"],
-          [
-            "Conversion Rate Lead -> Cliente",
-            "Conversiones (3) / Leads (61)",
-            "4.91% (6% - 12%)",
-          ],
-
-          ["Cost per Qualified Lead", "CPL real", "716.68 / 61 Leads 11.74"],
-          ["ROAS", "Revenue / Ad Spend", "(Llenar Isaac)"],
+        subtitle="¿La inversión genera resultados de negocio?"
+        rows={[
+          {
+            kpi: "CPL",
+            description: "Costo por Lead",
+            q4: "$11.74 (716.58 / 61 leads)",
+          },
+          {
+            kpi: "CPA",
+            description: "Costo por Conversión / Cliente",
+            q4: "$238.86",
+          },
+          {
+            kpi: "Conversion Rate Click → Lead",
+            description: "Leads (61) / Clicks (4,356)",
+            q4: "1.40%",
+          },
+          {
+            kpi: "Conversion Rate Lead → Cliente",
+            description: "Clientes (3) / Leads (61)",
+            q4: "4.91% (Benchmark 6% – 12%)",
+          },
+          {
+            kpi: "Cost per Qualified Lead",
+            description: "Costo real por lead calificado",
+            q4: "$11.74",
+          },
+          {
+            kpi: "ROAS",
+            description: "Revenue / Ad Spend",
+            q4: "Pendiente de revenue",
+          },
         ]}
       />
 
