@@ -7,7 +7,7 @@ import OrganicStrategy from "./pages/organic/OrganicStrategy";
 import OrganicTactics from "./pages/organic/OrganicTactics";
 import AdsTactics from "./pages/ads/AdsTactics";
 import Intro from "./pages/Intro";
-import LeadsInsights from "./pages/ads/components/LeadsInsights";
+
 import AdsReport from "./pages/ads/AdsReport";
 import AdsStrategy from "./pages/ads/AdsStrategy";
 import ContentCalendarView from "./pages/organic/ContentCalendarView";
@@ -30,7 +30,6 @@ function App() {
         <Route path="/ads-report" element={<AdsReport />} />
         <Route path="/ads-tactics" element={<AdsTactics />} />
         <Route path="/ads-strategy" element={<AdsStrategy />} />
-        <Route path="/leads-insights" element={<LeadsInsights />} />
         <Route path="/ads-kpis" element={<PaidAdsKPIsView />} />
       </Routes>
     </>
