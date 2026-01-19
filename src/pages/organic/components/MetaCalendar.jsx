@@ -1,4 +1,5 @@
 import CalendarItem, { WeekBlock } from "./CalendarItems";
+import Comments from "./Comments";
 
 export default function MetaCalendar() {
   return (
@@ -22,15 +23,18 @@ export default function MetaCalendar() {
             
             `}
           caption1="Vender al crédito ya no es un freno, es tu nueva ventaja competitiva. ¿Listo para activar tu ciclo de eficiencia?"
+          postId1="fb-ig-mes1-lunes-videos-1"
           contenido2="Cómo mantener tu nómina, tus gastos y tus proveedores siempre al día y con total tranquilidad. Haz que tus cobros vayan a la misma velocidad que tus ventas, convierte tus cuentas por cobrar en efectivo en horas con Ábaco. Tu dinero, listo para tus metas."
           caption2="
           Usa Ábaco: transforma tus facturas en capital inmediato y lidera tu empresa con libertad."
+          postId2="fb-ig-mes1-lunes-videos-2"
           contenido3="El mejor consejo financiero para este año: Tu liquidez debe ser mayor que tu paciencia. Si tus clientes pagan a 30 días, pero tus proveedores cobran a 15, tienes un problema de flujo, no de ventas. Mi recomendación es construir una base financiera sólida convirtiendo tus facturas al crédito en capital inmediato con ábaco."
           caption3="Ábaco te ofrece la herramienta para transformar tus cuentas por cobrar en un pilar de estabilidad, permitiéndote tomar decisiones estratégicas con confianza."
+          postId3="fb-ig-mes1-lunes-videos-3"
           contenido4="¿Sabías que puedes cobrar hoy mismo lo que vendiste al crédito? Tus facturas son oro. Con la estrategia correcta, pasas de la espera a la acción. Adelanta tus pagos de forma digital, rápida y transparente con Ábaco."
           caption4="Convierte el valor de tus ventas en capital operativo hoy mismo. En Ábaco, te damos el control para adelantar tus cobros y reinvertir al instante, garantizando la salud financiera de tu empresa."
+          postId4="fb-ig-mes1-lunes-videos-4"
         />
-
         <CalendarItem
           day="Martes de Carrousels"
           time="6 PM"

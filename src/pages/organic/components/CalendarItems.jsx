@@ -1,4 +1,10 @@
+import Comments from "./Comments";
+
 export default function CalendarItem({
+  postId1,
+  postId2,
+  postId3,
+  postId4,
   day,
   time,
   pillar,
@@ -39,6 +45,7 @@ export default function CalendarItem({
             </p>
             <p className="text-slate-500 font-semibold">Caption:</p>
             <p className="whitespace-pre-line">{caption1}</p>
+            {postId1 && <Comments postId={postId1} />}
           </div>
           <div className="bg-white text-black p-4 rounded-xl">
             <p className="whitespace-pre-line">
@@ -51,6 +58,7 @@ export default function CalendarItem({
             </p>
             <p className="text-slate-500 font-semibold">Caption:</p>
             <p className="whitespace-pre-line">{caption2}</p>
+            {postId2 && <Comments postId={postId2} />}
           </div>
           <div className="bg-white text-black p-4 rounded-xl">
             <p className="whitespace-pre-line">
@@ -63,18 +71,20 @@ export default function CalendarItem({
             </p>
             <p className="text-slate-500 font-semibold">Caption:</p>
             <p className="whitespace-pre-line">{caption3}</p>
+            {postId3 && <Comments postId={postId3} />}
           </div>
           <div className="bg-white text-black p-4 rounded-xl">
             <p className="whitespace-pre-line">
               <strong className="bg-slate-300 p-2 rounded-xl">
                 Contenido Semana 4:
-              </strong>{" "} 
+              </strong>{" "}
               <br />
               <br />
               {contenido4}
             </p>
             <p className="text-slate-500 font-semibold">Caption:</p>
             <p className="whitespace-pre-line">{caption4}</p>
+            {postId4 && <Comments postId={postId4} />}
           </div>
         </div>
       </div>
