@@ -13,6 +13,7 @@ import { db } from "../../../firebase.js";
 
 
 
+
 export default function Comments({ postId }) {
   const [comments, setComments] = useState([]);
   const [text, setText] = useState("");

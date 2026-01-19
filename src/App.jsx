@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 
@@ -19,6 +19,7 @@ function App() {
     <>
       <Navbar />
       <Routes>
+        <Route path="/" element={<Navigate to="/organic" />}/>
         <Route path="/intro" element={<Intro />} />
         <Route path="/organic-analisis" element={<OrganicAnalysis />} />
         <Route path="/organic-strategy" element={<OrganicStrategy />} />
