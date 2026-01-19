@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 export default function OrganicKpiSection({ title, subtitle, platforms }) {
@@ -41,7 +41,7 @@ export default function OrganicKpiSection({ title, subtitle, platforms }) {
 
             <tbody className="divide-y">
               {platforms.map((platform, index) => (
-                <>
+                <Fragment key={platform.name}>
                   {/* Separador de plataforma */}
                   <tr key={platform.name}>
                     <td
@@ -62,13 +62,13 @@ export default function OrganicKpiSection({ title, subtitle, platforms }) {
                       </td>
                       <td className="p-4 text-slate-600">{row.description}</td>
                       <td className="p-4 text-slate-500">{row.q4 || "—"}</td>
-                      <td className="p-4 text-slate-400">—</td>
+                      <td className="p-4 text-slate-400">{row.m1q1 || "-"}</td>
                       <td className="p-4 text-slate-400">—</td>
                       <td className="p-4 text-slate-400">—</td>
                       <td className="p-4 text-slate-400">—</td>
                     </tr>
                   ))}
-                </>
+                  </Fragment>
               ))}
             </tbody>
           </table>
