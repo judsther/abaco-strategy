@@ -20,7 +20,7 @@ export default function LinkedInCalendar() {
         <div className="grid md:grid-cols-4 gap-6">
           {[
             { week: "Semana 1", name: "Juan Carlos" },
-            { week: "Semana 2", name: "Edwin" },
+            { week: "Semana 2", name: "Edgar" },
             { week: "Semana 3", name: "Bárbara" },
             { week: "Semana 4", name: "Enrique" },
           ].map((item, i) => (

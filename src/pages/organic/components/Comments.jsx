@@ -6,7 +6,10 @@ import {
   orderBy,
   onSnapshot,
   serverTimestamp,
+  deleteDoc,
+  doc,
 } from "firebase/firestore";
+
 import { db } from "../../../firebase.js";
 
 
@@ -54,17 +57,41 @@ const handleSubmit = async () => {
   }
 };
 
+const handleDelete = async (commentId) => {
+  if (!postId) return;
+
+  const ok = confirm("¿Seguro que quieres borrar este comentario?");
+  if (!ok) return;
+
+  try {
+    await deleteDoc(doc(db, "posts", postId, "comments", commentId));
+  } catch (error) {
+    console.error("Error al borrar comentario:", error);
+  }
+};
+
 
 
   return (
     <div className="mt-6 border-t pt-4 space-y-3">
       <h4 className="font-semibold text-slate-700">Comentarios</h4>
 
-      {comments.map((c) => (
-        <div key={c.id} className="bg-slate-50 rounded-xl p-3 text-sm">
-          <p className="text-slate-800">{c.text}</p>
-        </div>
-      ))}
+     {comments.map((c) => (
+  <div
+    key={c.id}
+    className="bg-slate-800 rounded-xl p-3 text-sm flex justify-between items-start gap-2"
+  >
+    <p className="text-slate-50">{c.text}</p>
+
+    <button
+      onClick={() => handleDelete(c.id)}
+      className="text-red-500 text-xs hover:underline"
+    >
+      Borrar
+    </button>
+  </div>
+))}
+
 
       <textarea
         className="w-full border rounded-xl p-3 text-sm"

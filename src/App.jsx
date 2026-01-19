@@ -19,7 +19,7 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Navigate to="/organic" />}/>
+        <Route path="/" element={<Navigate to="/intro" />}/>
         <Route path="/intro" element={<Intro />} />
         <Route path="/organic-analisis" element={<OrganicAnalysis />} />
         <Route path="/organic-strategy" element={<OrganicStrategy />} />
