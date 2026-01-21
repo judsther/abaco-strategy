@@ -1,8 +1,7 @@
+import PrimaryButton from "../../../components/PrimaryButton";
+import OrganicNavigationBtns from "../components/OrganicNavigationBtns";
+import ContentCalendarView from "./components/ContentCalendarView";
 
-import PrimaryButton from "../../components/PrimaryButton";
-import IndicatorsBlock from "./components/IndicatorsBlock";
-import OrganicNavigationBtns from "./components/OrganicNavigationBtns";
-import ContentCalendarView from "./ContentCalendarView";
 
 export default function OrganicTactics() {
   return (
@@ -12,7 +11,7 @@ export default function OrganicTactics() {
       <div className="max-w-6xl mx-auto space-y-10">
         {/* TÍTULO PRINCIPAL */}
         <ContentCalendarView/>
-        <IndicatorsBlock />
+       
       </div>
     </div>
   );

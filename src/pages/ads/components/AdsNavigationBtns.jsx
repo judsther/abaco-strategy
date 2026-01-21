@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import PrimaryButton from "../../components/PrimaryButton";
+import PrimaryButton from "../../../components/PrimaryButton";
 
 export default function AdsNavigationBtns() {
   return (

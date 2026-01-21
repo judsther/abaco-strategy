@@ -1,7 +1,7 @@
 
 import Recommendations from "./components/Recommend";
 import Identity from "./components/Identity";
-import OrganicNavigationBtns from "./components/OrganicNavigationBtns";
+import OrganicNavigationBtns from "../components/OrganicNavigationBtns";
 
 export default function OrganicStrategy() {
   return (

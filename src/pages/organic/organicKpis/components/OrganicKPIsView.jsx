@@ -1,8 +1,8 @@
-import OrganicKpiSection from "./OrganicKpiSection";
+import OrganicKpiSection from "./OrganicKpiSection.jsx";
 import { doc, getDoc, setDoc } from "firebase/firestore";
-import { db } from "../../../firebase.js";
+import { db } from "../../../../firebase.js";
 import { useEffect, useState } from "react";
-import KpiInput from "../../../components/KpiInput.jsx";
+import KpiInput from "../../../ads/components/KpiInput.jsx";
 
 
 

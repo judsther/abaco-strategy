@@ -1,18 +1,18 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
-
-import OrganicAnalysis from "./pages/organic/OrganicAnalysis";
-import OrganicStrategy from "./pages/organic/OrganicStrategy";
-import OrganicTactics from "./pages/organic/OrganicTactics";
-import AdsTactics from "./pages/ads/AdsTactics";
 import Intro from "./pages/Intro";
+import OrganicAnalysis from "./pages/organic/organicAnalysis/OrganicAnalysis";
+import OrganicStrategy from "./pages/organic/organicStrategy/OrganicStrategy";
+import OrganicTactics from "./pages/organic/organicCalendar/OrganicTactics";
+import OrganicKpis from "./pages/organic/organicKpis/OrganicKpis";
+import ContentCalendarView from "./pages/organic/organicCalendar/components/ContentCalendarView";
+import AdsReport from "./pages/ads/adsReport/AdsReport";
+import AdsTactics from "./pages/ads/adsTactics/AdsTactics";
+import AdsStrategy from "./pages/ads/adsStrategy/AdsStrategy";
+import PaidAdsKPIsView from "./pages/ads/adsKpis/PaidAdsKPIsView";
 
-import AdsReport from "./pages/ads/AdsReport";
-import AdsStrategy from "./pages/ads/AdsStrategy";
-import ContentCalendarView from "./pages/organic/ContentCalendarView";
-import PaidAdsKPIsView from "./pages/ads/PaidAdsKPIsView";
-import OrganicKpis from "./pages/organic/OrganicKpis";
+
 
 function App() {
   return (
@@ -21,8 +21,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/intro" />}/>
         <Route path="/intro" element={<Intro />} />
-        <Route path="/organic-analisis" element={<OrganicAnalysis />} />
-        <Route path="/organic-strategy" element={<OrganicStrategy />} />
+        <Route path="/organic-analisis" element={<OrganicAnalysis/>} />
+        <Route path="/organic-strategy" element={<OrganicStrategy/>} />
         <Route path="/organic-tactics" element={<OrganicTactics />} />
         <Route path="/organic-kpis" element={<OrganicKpis />} />
 

@@ -1,9 +1,10 @@
 
-import AdsNurturing from "./AdsNurturing";
-import TabButton from "../organic/components/TabButton";
+import AdsNurturing from "./components/AdsNurturing";
+import TabButton from "../../organic/components/TabButton";
 import { useState } from "react";
-import AdsMeta from "./AdsMeta";
-import AdsNavigationBtns from "./AdsNavigationBtns";
+import AdsMeta from "./components/AdsMeta";
+import AdsNavigationBtns from "../components/AdsNavigationBtns";
+import AdsAtom from "./components/AdsAtom";
 
 export default function AdsTactics() {
     const [active, setActive] = useState("adsmeta");
@@ -27,19 +28,19 @@ export default function AdsTactics() {
           active={active}
           setActive={setActive}
         />
-          {/* <TabButton
-            label="YouTube / TikTok"
-            value="yttt"
+           <TabButton
+            label="ATOM - Next Actions"
+            value="atom"
             active={active}
             setActive={setActive}
-          /> */}
+          /> 
         </div> 
 
         {/* Vista dinámica */}
         <div>
           {active === "adsmeta" && <AdsMeta />}
           {active === "email" && <AdsNurturing />}
-          {/* {active === "yttt" && <YTTTCalendar />} */}
+          {active === "atom" && <AdsAtom />}
         </div>
       
 

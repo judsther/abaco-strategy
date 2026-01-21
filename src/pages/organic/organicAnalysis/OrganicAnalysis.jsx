@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import OrganicNavigationBtns from "./components/OrganicNavigationBtns";
+import OrganicNavigationBtns from "../components/OrganicNavigationBtns";
 
 
 export default function OrganicAnalysis() {

@@ -1,9 +1,9 @@
 
 import { useEffect, useState } from "react";
-import AdsNavigationBtns from "./AdsNavigationBtns";
-import KpiInput from "../../components/KpiInput";
+import AdsNavigationBtns from "../components/AdsNavigationBtns";
+import KpiInput from "../components/KpiInput";
 import KpiSection from "./components/KpiSection";
-import { db } from "../../firebase";
+import { db } from "../../../firebase";
 import { doc, getDoc, setDoc } from "firebase/firestore";
 
 

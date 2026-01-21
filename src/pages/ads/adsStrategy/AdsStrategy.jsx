@@ -1,5 +1,5 @@
 
-import AdsNavigationBtns from "./AdsNavigationBtns";
+import AdsNavigationBtns from "../components/AdsNavigationBtns";
 import AcquisitionStrategyQ1 from "./components/AcquisitionStrategyQ1";
 
 export default function AdsStrategy() {

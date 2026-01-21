@@ -1,5 +1,5 @@
 import OrganicKPIsView from "./components/OrganicKPIsView";
-import OrganicNavigationBtns from "./components/OrganicNavigationBtns";
+import OrganicNavigationBtns from "../components/OrganicNavigationBtns";
 
 
 

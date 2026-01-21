@@ -1,5 +1,5 @@
 import CalendarItem, { WeekBlock } from "./CalendarItems";
-import Comments from "./Comments";
+import Comments from "../../components/Comments";
 
 export default function MetaCalendar() {
   return (

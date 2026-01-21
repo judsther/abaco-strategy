@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 
-import MetaCalendar from "./components/MetaCalendar";
-import LinkedInCalendar from "./components/LinkedInCalendar";
-import YTTTCalendar from "./components/YTTTCalendar";
-import TabButton from "./components/TabButton";
-import OrganicNavigationBtns from "./components/OrganicNavigationBtns";
+import MetaCalendar from "./MetaCalendar";
+import LinkedInCalendar from "./LinkedInCalendar";
+import YTTTCalendar from "./YTTTCalendar";
+import TabButton from "../../components/TabButton";
+import OrganicNavigationBtns from "../../components/OrganicNavigationBtns";
 
 export default function ContentCalendarView() {
   const [active, setActive] = useState("meta");
