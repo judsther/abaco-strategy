@@ -12,7 +12,7 @@ export default function AdsReport() {
 
       <header className="space-y-3">
         <h1 className="text-4xl font-semibold text-slate-900">
-          Reporte de Rendimiento según Leads
+          Reporte de Rendimiento según Meta
         </h1>
         <p className="text-slate-600">Sep–Dic 2025</p>
       </header>

@@ -19,7 +19,7 @@ export default function ROICalculatorView() {
       {/* Resumen Q4 */}
 <section className="bg-white rounded-3xl shadow-xl p-10 space-y-6">
   <h2 className="text-2xl font-bold text-slate-800">
-    Resumen Sep - Dec 2025 Marketing
+    Resultados por Mes
   </h2>
 
   <div className="overflow-x-auto">

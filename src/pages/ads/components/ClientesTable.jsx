@@ -43,7 +43,7 @@ const clientes = [
 
 ];
 
-import { useState } from "react";
+import { Fragment, useState } from "react";
 
 export default function ClientesTable() {
   const [open, setOpen] = useState(null);
@@ -51,7 +51,7 @@ export default function ClientesTable() {
   return (
     <section className="bg-white rounded-3xl shadow-xl p-10 space-y-6">
       <h2 className="text-2xl font-bold text-slate-800">
-        Clientes Activos
+        Resultados por Clientes 
       </h2>
 
       <table className="w-full text-sm">
@@ -60,24 +60,29 @@ export default function ClientesTable() {
             <th className="p-3 text-left">Cliente</th>
             <th className="p-3">Fuente</th>
             <th className="p-3">Rubro</th>
-            <th className="p-3">Fecha</th>
-            <th className="p-3">Promedio</th>
-            <th className="p-3">Línea</th>
+            <th className="p-3 whitespace-pre-wrap">{`Fecha de 
+activación`}</th>
+            <th className="p-3 whitespace-pre-wrap">{`Promedio de 
+ventas según 
+IVA`}</th>
+            <th className="p-3 whitespace-pre-wrap">{`Línea de
+Crédito 
+Aprobada`}</th>
           </tr>
         </thead>
 
         <tbody className="divide-y">
           {clientes.map((c, i) => (
-            <>
+            <Fragment key={i}>
               <tr
                 key={i}
                 onClick={() => setOpen(open === i ? null : i)}
                 className="cursor-pointer hover:bg-slate-50"
               >
                 <td className="p-3 font-medium">{c.nombre}</td>
-                <td className="p-3 text-center">{c.fuente}</td>
+                <td className="p-3">{c.fuente}</td>
                 <td className="p-3">{c.rubro}</td>
-                <td className="p-3 text-center">{c.fecha}</td>
+                <td className="p-3">{c.fecha}</td>
                 <td className="p-3">{c.promedio}</td>
                 <td className="p-3">{c.linea}</td>
               </tr>
@@ -91,8 +96,8 @@ export default function ClientesTable() {
                           <th className="p-2">Mes</th>
                           <th className="p-2">Monto</th>
                           <th className="p-2">Interés</th>
-                          <th className="p-2">Ingreso</th>
-                          <th className="p-2">Facturas</th>
+                          <th className="p-2">Ingreso Efectivo</th>
+                          <th className="p-2">Facturas Financiadas</th>
                         </tr>
                       </thead>
 
@@ -119,7 +124,7 @@ export default function ClientesTable() {
                   </td>
                 </tr>
               )}
-            </>
+            </Fragment>
           ))}
         </tbody>
       </table>
