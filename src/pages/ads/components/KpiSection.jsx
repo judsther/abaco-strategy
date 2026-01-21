@@ -49,10 +49,10 @@ export default function KpiSection({ title, subtitle, rows }) {
                   </td>
                   <td className="py-3 text-slate-700">{row.description}</td>
                   <td className="py-3 text-slate-900">{row.q4}</td>
-                  <td className="py-3 text-slate-400 italic">—</td>
-                  <td className="py-3 text-slate-400 italic">—</td>
-                  <td className="py-3 text-slate-400 italic">—</td>
-                  <td className="py-3 text-slate-400 italic">—</td>
+                  <td className="py-3 text-slate-400 italic">{row.m1q1}</td>
+                  <td className="py-3 text-slate-400 italic">{row.m2q1}</td>
+                  <td className="py-3 text-slate-400 italic">{row.m3q1}</td>
+                  <td className="py-3 text-slate-400 italic">{row.totalq1}</td>
                 </tr>
               ))}
             </tbody>

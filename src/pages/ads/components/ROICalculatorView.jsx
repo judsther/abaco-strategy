@@ -1,3 +1,5 @@
+import ClientesTable from "./ClientesTable";
+
 export default function ROICalculatorView() {
   return (
     <div className=" py-14 space-y-14">
@@ -12,110 +14,73 @@ export default function ROICalculatorView() {
         </p>
       </header>
 
-      <section className="bg-white rounded-3xl shadow-xl p-10 space-y-6">
-        <h2 className="text-2xl font-bold text-slate-900">
-          CPL y CPA de Campañas Digitales
-        </h2>
-        <p className="text-slate-600">
-          Análisis desde Meta, AtomChat y HubSpot
-        </p>
-
-        <div className="overflow-x-auto">
-          <table className="w-full border-collapse">
-            <thead>
-              <tr className="bg-indigo-800 text-white text-left">
-                <th className="py-3 px-4 rounded-tl-2xl">Métrica</th>
-                <th className="py-3 px-4">Cantidad</th>
-                <th className="py-3 px-4">Fuente</th>
-                <th className="py-3 px-4">CPL</th>
-                <th className="py-3 px-4 rounded-tr-2xl">CPA</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-200">
-              <tr className="hover:bg-slate-50 transition">
-                <td className="py-3 px-4 font-semibold">Inversión total</td>
-                <td className="py-3 px-4">$716.58</td>
-                <td className="py-3 px-4">-</td>
-                <td className="py-3 px-4">-</td>
-              </tr>
-
-              <tr className="hover:bg-slate-50 transition">
-                <td className="py-3 px-4 font-semibold">Medio valor</td>
-                <td className="py-3 px-4">1490</td>
-                <td className="py-3 px-4">Meta ADS</td>
-                <td className="py-3 px-4">$ 0.48</td>
-              </tr>
-
-              <tr className="hover:bg-slate-50 transition">
-                <td className="py-3 px-4 font-semibold">
-                  Conversaciones WhatsApp
-                </td>
-                <td className="py-3 px-4">644</td>
-                <td className="py-3 px-4">AtomChat</td>
-                <td className="py-3 px-4">$ 1.10</td>
-              </tr>
-
-              <tr className="hover:bg-slate-50 transition">
-                <td className="py-3 px-4 font-semibold">
-                  Asignadas a vendedor
-                </td>
-                <td className="py-3 px-4">62</td>
-                <td className="py-3 px-4">AtomChat</td>
-                <td className="py-3 px-4">$ 11.55</td>
-              </tr>
-
-              <tr className="hover:bg-slate-50 transition">
-                <td className="py-3 px-4 font-semibold">Leads Hubspot</td>
-                <td className="py-3 px-4">61</td>
-                <td className="py-3 px-4">Hubspot</td>
-                <td className="py-3 px-4">$ 11.74</td>
-              </tr>
-
-              <tr className="hover:bg-slate-50 transition">
-                <td className="py-3 px-4 font-semibold">Clientes cerrados</td>
-                <td className="py-3 px-4">3</td>
-                <td className="py-3 px-4">-</td>
-                <td className="py-3 px-4">-</td>
-                <td className="py-3 px-4">$238.86</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
       {/* Clientes */}
-      <section className="bg-white rounded-3xl shadow-xl p-10 space-y-6">
-        <h2 className="text-2xl font-bold text-slate-800">
-          Clientes Activos Desembolsados
-        </h2>
+      <ClientesTable/>
+      {/* Resumen Q4 */}
+<section className="bg-white rounded-3xl shadow-xl p-10 space-y-6">
+  <h2 className="text-2xl font-bold text-slate-800">
+    Resumen Sep - Dec 2025 Marketing
+  </h2>
 
-        <table className="w-full text-sm">
-          <thead>
-            <tr className="bg-slate-100">
-              <th className="p-3 text-left">Cliente</th>
-              <th className="p-3 text-left">Fuente</th>
-              <th className="p-3 text-left">Ingreso</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y">
-            <tr>
-              <td className="p-3">ELECTROMECANICA INDUSTRIAL, S.A. DE C.V.</td>
-              <td className="p-3">Atom</td>
-              <td className="p-3">$396.40</td>
-            </tr>
-            <tr>
-              <td className="p-3">KEVIN ENRIQUE CABEZAS</td>
-              <td className="p-3">Redes</td>
-              <td className="p-3">$336.45</td>
-            </tr>
-            <tr>
-              <td className="p-3">INTERMARKET TRADERS, S.A. DE C.V.</td>
-              <td className="p-3">Redes</td>
-              <td className="p-3">$851.20</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+  <div className="overflow-x-auto">
+    <table className="w-full text-sm text-left">
+      <thead>
+        <tr className="bg-slate-100 text-slate-700">
+          <th className="p-3">Mes</th>
+          <th className="p-3">Ingreso Total</th>
+          <th className="p-3">Inversión</th>
+          <th className="p-3">Ganancia Neta</th>
+          <th className="p-3">ROI</th>
+          <th className="p-3">Clientes Nuevos</th>
+          <th className="p-3">Leads Atom/Hubspot</th>
+        </tr>
+      </thead>
+
+      <tbody className="divide-y">
+        <tr>
+          <td className="p-3 font-medium">Oct 2025</td>
+          <td className="p-3">$250.69</td>
+          <td className="p-3">$59.26</td>
+          <td className="p-3 text-emerald-600">$191.43</td>
+          <td className="p-3">323.03%</td>
+          <td className="p-3">2</td>
+          <td className="p-3">5</td>
+        </tr>
+
+        <tr>
+          <td className="p-3 font-medium">Nov 2025</td>
+          <td className="p-3">$660.49</td>
+          <td className="p-3">$295.55</td>
+          <td className="p-3 text-emerald-600">$364.94</td>
+          <td className="p-3">123.48%</td>
+          <td className="p-3">1</td>
+          <td className="p-3">25</td>
+        </tr>
+
+        <tr>
+          <td className="p-3 font-medium">Dic 2025</td>
+          <td className="p-3">$673.14</td>
+          <td className="p-3">$361.77</td>
+          <td className="p-3 text-emerald-600">$311.37</td>
+          <td className="p-3">86.07%</td>
+          <td className="p-3">0</td>
+          <td className="p-3">31</td>
+        </tr>
+
+        <tr className="bg-slate-50 font-semibold">
+          <td className="p-3">Total Q4</td>
+          <td className="p-3">$1,584.32</td>
+          <td className="p-3">$716.58</td>
+          <td className="p-3 text-emerald-700">$867.47</td>
+          <td className="p-3">121.06%</td>
+          <td className="p-3">3</td>
+          <td className="p-3">61</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
 
       {/* Resultado */}
       <section className="bg-linear-to-br from-slate-900 to-slate-800 text-white rounded-3xl p-10 space-y-4">
