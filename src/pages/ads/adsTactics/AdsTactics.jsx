@@ -5,6 +5,7 @@ import { useState } from "react";
 import AdsMeta from "./components/AdsMeta";
 import AdsNavigationBtns from "../components/AdsNavigationBtns";
 import AdsAtom from "./components/AdsAtom";
+import AdsX from "./components/AdsX";
 
 export default function AdsTactics() {
     const [active, setActive] = useState("adsmeta");
@@ -28,9 +29,15 @@ export default function AdsTactics() {
           active={active}
           setActive={setActive}
         />
-           <TabButton
-            label="ATOM - Next Actions"
+         <TabButton
+            label="ATOM - Next Steps"
             value="atom"
+            active={active}
+            setActive={setActive}
+          /> 
+           <TabButton
+            label="X"
+            value="x"
             active={active}
             setActive={setActive}
           /> 
@@ -41,6 +48,7 @@ export default function AdsTactics() {
           {active === "adsmeta" && <AdsMeta />}
           {active === "email" && <AdsNurturing />}
           {active === "atom" && <AdsAtom />}
+          {active === "x" && <AdsX />}
         </div>
       
 
