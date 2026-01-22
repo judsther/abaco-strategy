@@ -81,7 +81,7 @@ const handleDelete = async (commentId) => {
     key={c.id}
     className="bg-slate-800 rounded-xl p-3 text-sm flex justify-between items-start gap-2"
   >
-    <p className="text-slate-50">{c.text}</p>
+    <p className="text-slate-50 whitespace-pre-wrap wrap-break-word">{c.text}</p>
 
     <button
       onClick={() => handleDelete(c.id)}

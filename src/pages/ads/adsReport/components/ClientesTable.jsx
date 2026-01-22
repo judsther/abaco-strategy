@@ -20,8 +20,8 @@ const clientes = [
     promedio: "$4,962.32",
     linea: "$10,000",
     detalle: [
-      { mes: "Septiembre", monto: "$3,840.11", interes: "2.00%", ingreso: "-", facturas: 18 },
-      { mes: "Octubre", monto: "$958.49", interes: "2.00%", ingreso: "$94.73", facturas: 3 },
+      { mes: "Septiembre", monto: "$3,840.11", interes: "2.00%", ingreso: "$45.72", facturas: 18 },
+      { mes: "Octubre", monto: "$958.49", interes: "2.00%", ingreso: "$48.73", facturas: 3 },
       { mes: "Noviembre", monto: "$2,114.28", interes: "2.00%", ingreso: "$96.95", facturas: 6 },
       { mes: "Diciembre", monto: "$1,763.61", interes: "2.00%", ingreso: "$145.05", facturas: 6 },
     ],

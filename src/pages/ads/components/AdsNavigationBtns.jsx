@@ -6,7 +6,7 @@ export default function AdsNavigationBtns() {
     <div>
       <div className="flex flex-wrap gap-3">
         {[
-          { to: "/ads-report", label: "Análisis" },
+          { to: "/ads-report", label: "Reporte" },
           { to: "/ads-strategy", label: "Estrategia (OKR)" },
           { to: "/ads-tactics", label: "Plan de Acción" },
         ].map((item) => (
