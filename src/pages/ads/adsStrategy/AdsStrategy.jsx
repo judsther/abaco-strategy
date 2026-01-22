@@ -78,9 +78,9 @@ export default function AdsStrategy() {
                   KR3 (Resultado)
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  Lograr un acumulado de 18 desembolsos al cierre del Q1,
-                  apuntándole a una tasa de conversión mínima del 1% sobre el
-                  tráfico generado en febrero y marzo. (meta proporcional al 40%
+                  Lograr un acumulado de 18 clientes al cierre del Q1,
+                  apuntándole a una tasa de conversión mínima del 0.30% sobre el
+                  tráfico generado de leads generales en febrero y marzo. (meta proporcional al 40%
                   de la cuota anual).
                 </p>
               </div>
