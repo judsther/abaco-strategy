@@ -9,7 +9,7 @@ export default function OrganicNavigationBtns() {
         {[
           { to: "/organic-analisis", label: "Análisis" },
           { to: "/organic-strategy", label: "Estrategia" },
-          { to: "/organic-tactics-calendar", label: "Plan de Acción" },
+          { to: "/organic-tactics-calendar", label: "Contenido" },
         ].map((item) => (
           <NavLink
             key={item.to}
