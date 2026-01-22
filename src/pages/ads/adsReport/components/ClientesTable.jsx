@@ -94,7 +94,7 @@ Aprobada`}</th>
                       <thead>
                         <tr className="bg-slate-200 text-left">
                           <th className="p-2">Mes</th>
-                          <th className="p-2">Monto</th>
+                          <th className="p-2">Monto Financiado</th>
                           <th className="p-2">Interés</th>
                           <th className="p-2">Ingreso Efectivo</th>
                           <th className="p-2">Facturas Financiadas</th>
