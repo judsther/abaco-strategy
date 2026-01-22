@@ -13,7 +13,8 @@ export default function AdsMeta() {
       <section className="bg-white rounded-3xl shadow-xl p-10 space-y-4">
         <h2 className="text-2xl font-bold text-indigo-800">Objetivos</h2>
         <div className="grid md:grid-cols-2 gap-6 text-slate-700">
-          <p>Generación de Leads: 1,800</p>
+          <p>Generación de Leads: 6,000</p>
+          <p>Leads Calificados: 360</p>
           <p>Clientes nuevos: 18</p>
         </div>
       </section>
