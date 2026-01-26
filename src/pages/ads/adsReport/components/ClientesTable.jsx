@@ -7,8 +7,8 @@ const clientes = [
     promedio: "$29,819.60",
     linea: "$25,000",
     detalle: [
-      { mes: "Noviembre", monto: "$8,596.22", interes: "1.65%", ingreso: "$114.16", facturas: 4 },
-      { mes: "Diciembre", monto: "$5,322.24", interes: "1.65%", ingreso: "$282.24", facturas: 2 },
+      { mes: "Noviembre", monto: "$8,596.22", interes: "1.65%", comision:"2.25%", diasFinanciados:"61", ingreso: "$114.16", facturas: 4 },
+      { mes: "Diciembre", monto: "$5,322.24", interes: "1.65%", comision:"0.75%", diasFinanciados:"12", ingreso: "$282.24", facturas: 2 },
     ],
     total: { monto: "$13,918.46", ingreso: "$396.40", facturas: 6 }
   },
@@ -20,10 +20,10 @@ const clientes = [
     promedio: "$4,962.32",
     linea: "$10,000",
     detalle: [
-      { mes: "Septiembre", monto: "$3,840.11", interes: "2.00%", ingreso: "$45.72", facturas: 18 },
-      { mes: "Octubre", monto: "$958.49", interes: "2.00%", ingreso: "$48.73", facturas: 3 },
-      { mes: "Noviembre", monto: "$2,114.28", interes: "2.00%", ingreso: "$96.95", facturas: 6 },
-      { mes: "Diciembre", monto: "$1,763.61", interes: "2.00%", ingreso: "$145.05", facturas: 6 },
+      { mes: "Septiembre", monto: "$3,840.11", interes: "2.00%", comision:"1%", diasFinanciados:"30", ingreso: "$45.72", facturas: 18 },
+      { mes: "Octubre", monto: "$958.49", interes: "2.00%", comision:"1%", diasFinanciados:"30", ingreso: "$48.73", facturas: 3 },
+      { mes: "Noviembre", monto: "$2,114.28", interes: "2.00%", comision:"1%", diasFinanciados:"30", ingreso: "$96.95", facturas: 6 },
+      { mes: "Diciembre", monto: "$1,763.61", interes: "2.00%", comision:"1%", diasFinanciados:"30", ingreso: "$145.05", facturas: 6 },
     ],
     total: { monto: "$8,676.49", ingreso: "$336.45", facturas: 33 }
   },{
@@ -34,9 +34,9 @@ const clientes = [
   promedio: "$38,619.73",
   linea: "$50,000",
   detalle: [
-    { mes: "Octubre", monto: "$13,802.40", interes: "3.25%", ingreso: "$155.96", facturas: 25 },
-    { mes: "Noviembre", monto: "$5,101.20", interes: "3.25%", ingreso: "$449.38", facturas: 6 },
-    { mes: "Diciembre", monto: "$5,732.10", interes: "3.25%", ingreso: "$245.85", facturas: 15 },
+    { mes: "Octubre", monto: "$13,802.40", interes: "3.25%", comision:"1%", diasFinanciados:"30", ingreso: "$155.96", facturas: 25 },
+    { mes: "Noviembre", monto: "$5,101.20", interes: "3.25%", comision:"1%", diasFinanciados:"30", ingreso: "$449.38", facturas: 6 },
+    { mes: "Diciembre", monto: "$5,732.10", interes: "3.25%", comision:"1%", diasFinanciados:"30", ingreso: "$245.85", facturas: 15 },
   ],
   total: { monto: "$24,635.70", ingreso: "$851.20", facturas: 46 }
 }
@@ -96,6 +96,8 @@ Aprobada`}</th>
                           <th className="p-2">Mes</th>
                           <th className="p-2">Monto Financiado</th>
                           <th className="p-2">Interés</th>
+                          <th className="p-2">Comisión</th>
+                          <th className="p-2">Días Financiados</th>
                           <th className="p-2">Ingreso Efectivo</th>
                           <th className="p-2">Facturas Financiadas</th>
                         </tr>
@@ -107,6 +109,8 @@ Aprobada`}</th>
                             <td className="p-2">{d.mes}</td>
                             <td className="p-2">{d.monto}</td>
                             <td className="p-2">{d.interes}</td>
+                            <td className="p-2">{d.comision}</td>
+                            <td className="p-2">{d.diasFinanciados}</td>
                             <td className="p-2 text-emerald-600">{d.ingreso}</td>
                             <td className="p-2 ">{d.facturas}</td>
                           </tr>
@@ -115,6 +119,8 @@ Aprobada`}</th>
                         <tr className="font-semibold bg-white border-t">
                           <td className="p-2">Total</td>
                           <td className="p-2">{c.total.monto}</td>
+                          <td></td>
+                          <td></td>
                           <td></td>
                           <td className="p-2 text-emerald-700">{c.total.ingreso}</td>
                           <td className="p-2 ">{c.total.facturas}</td>
