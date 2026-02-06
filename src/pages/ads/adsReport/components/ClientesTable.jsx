@@ -80,7 +80,7 @@ Aprobada`}</th>
                 onClick={() => setOpen(open === i ? null : i)}
                 className="cursor-pointer hover:bg-slate-50"
               >
-                <td className="p-3 text-indigo-600 font-medium underline">{c.nombre}<ChevronDown className="w-4 h-4 text-indigo-500" /></td>
+                <td className="p-3 text-indigo-600 font-medium">{c.nombre}<ChevronDown className="w-4 h-4 text-indigo-500" /></td>
                 <td className="p-3">{c.fuente}</td>
                 <td className="p-3">{c.rubro}</td>
                 <td className="p-3">{c.fecha}</td>

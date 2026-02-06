@@ -132,6 +132,37 @@ m1q1: (
 ),
 
               },
+              {
+                kpi: "Follower Growth Rate",
+                description: "% de personas que siguen la cuenta en un período",
+               q4: (
+  <KpiInput name="facebook_follower_growth_rate_Q425" value={kpis.facebook_follower_growth_rate_Q425} onChange={handleChange} />
+),
+m1q1: (
+  <KpiInput name="facebook_follower_growth_rate_M1Q126" value={kpis.facebook_follower_growth_rate_M1Q126} onChange={handleChange} />
+), m2q1: (
+  <KpiInput name="facebook_follower_growth_rate_M2Q126" value={kpis.facebook_follower_growth_rate_M2Q126} onChange={handleChange} />
+), m3q1: (
+  <KpiInput name="facebook_follower_growth_rate_M3Q126" value={kpis.facebook_follower_growth_rate_M3Q126} onChange={handleChange} />
+), totalq1: (
+  <KpiInput name="facebook_follower_growth_rate_total_Q126" value={kpis.facebook_follower_growth_rate_total_Q126} onChange={handleChange} />
+),
+              },{
+                kpi: "Total Page Likes to Date",
+                description: "Número total de likes que tiene la página",
+                q4: (
+  <KpiInput name="facebook_total_page_likes_Q425" value={kpis.facebook_total_page_likes_Q425} onChange={handleChange} />
+),
+m1q1: (
+  <KpiInput name="facebook_total_page_likes_M1Q126" value={kpis.facebook_total_page_likes_M1Q126} onChange={handleChange} />
+), m2q1: (
+  <KpiInput name="facebook_total_page_likes_M2Q126" value={kpis.facebook_total_page_likes_M2Q126} onChange={handleChange} />
+), m3q1: (
+  <KpiInput name="facebook_total_page_likes_M3Q126" value={kpis.facebook_total_page_likes_M3Q126} onChange={handleChange} />
+), totalq1: (
+  <KpiInput name="facebook_total_page_likes_total_Q126" value={kpis.facebook_total_page_likes_total_Q126} onChange={handleChange} />
+),
+              }
             ],
           },
           {
@@ -169,20 +200,50 @@ m1q1: (
 ),
               },
               {
-                kpi: "Share Rate",
-                description: "% de personas que comparten",
+                kpi: "Profile Visits",
+                description: "Visitas al perfil",
                 q4: (
-  <KpiInput name="instagram_share_rate_Q425" value={kpis.instagram_share_rate_Q425} onChange={handleChange} />
+  <KpiInput name="instagram_profile_visits_Q425" value={kpis.instagram_profile_visits_Q425} onChange={handleChange} />
 ), m1q1: (
-  <KpiInput name="instagram_share_rate_M1Q126" value={kpis.instagram_share_rate_M1Q126} onChange={handleChange} />
+  <KpiInput name="instagram_profile_visits_M1Q126" value={kpis.instagram_profile_visits_M1Q126} onChange={handleChange} />
 ), m2q1: (
-  <KpiInput name="instagram_share_rate_M2Q126" value={kpis.instagram_share_rate_M2Q126} onChange={handleChange} />
+  <KpiInput name="instagram_profile_visits_M2Q126" value={kpis.instagram_profile_visits_M2Q126} onChange={handleChange} />
 ), m3q1: (
-  <KpiInput name="instagram_share_rate_M3Q126" value={kpis.instagram_share_rate_M3Q126} onChange={handleChange} />
+  <KpiInput name="instagram_profile_visits_M3Q126" value={kpis.instagram_profile_visits_M3Q126} onChange={handleChange} />
 ), totalq1: (
-  <KpiInput name="instagram_share_rate_total_Q126" value={kpis.instagram_share_rate_total_Q126} onChange={handleChange} />
+  <KpiInput name="instagram_profile_visits_total_Q126" value={kpis.instagram_profile_visits_total_Q126} onChange={handleChange} />
 ),
               },
+              {
+                kpi: "Follower Growth Rate",
+                description: "% de personas que siguen la cuenta en un período",
+                q4: (
+  <KpiInput name="instagram_follower_growth_rate_Q425" value={kpis.instagram_follower_growth_rate_Q425} onChange={handleChange} />
+), m1q1: (
+  <KpiInput name="instagram_follower_growth_rate_M1Q126" value={kpis.instagram_follower_growth_rate_M1Q126} onChange={handleChange} />
+), m2q1: (
+  <KpiInput name="instagram_follower_growth_rate_M2Q126" value={kpis.instagram_follower_growth_rate_M2Q126} onChange={handleChange} />
+), m3q1: (
+  <KpiInput name="instagram_follower_growth_rate_M3Q126" value={kpis.instagram_follower_growth_rate_M3Q126} onChange={handleChange} />
+), totalq1: (
+  <KpiInput name="instagram_follower_growth_rate_total_Q126" value={kpis.instagram_follower_growth_rate_total_Q126} onChange={handleChange} />
+),
+              },
+              {
+                kpi: "Total Followers to Date",
+                description: "Número total de seguidores hasta la fecha",
+                q4: (
+  <KpiInput name="instagram_total_followers_Q425" value={kpis.instagram_total_followers_Q425} onChange={handleChange} />
+), m1q1: (
+  <KpiInput name="instagram_total_followers_M1Q126" value={kpis.instagram_total_followers_M1Q126} onChange={handleChange} />
+), m2q1: (
+  <KpiInput name="instagram_total_followers_M2Q126" value={kpis.instagram_total_followers_M2Q126} onChange={handleChange} />
+), m3q1: (
+  <KpiInput name="instagram_total_followers_M3Q126" value={kpis.instagram_total_followers_M3Q126} onChange={handleChange} />
+), totalq1: (
+  <KpiInput name="instagram_total_followers_total_Q126" value={kpis.instagram_total_followers_total_Q126} onChange={handleChange} />
+),
+              }
             ],
           },
           {
@@ -193,6 +254,11 @@ m1q1: (
                 description: "Usuarios únicos que vieron el contenido",
                 q4: (<KpiInput name="linkedin_reach_Q425" value={kpis.linkedin_reach_Q425} onChange={handleChange} />),
                 m1q1: (<KpiInput name="linkedin_reach_M1Q126" value={kpis.linkedin_reach_M1Q126} onChange={handleChange} />),m2q1: (<KpiInput name="linkedin_reach_M2Q126" value={kpis.linkedin_reach_M2Q126} onChange={handleChange} />),m3q1: (<KpiInput name="linkedin_reach_M3Q126" value={kpis.linkedin_reach_M3Q126} onChange={handleChange} />),totalq1: (<KpiInput name="linkedin_reach_total_Q126" value={kpis.linkedin_reach_total_Q126} onChange={handleChange} />),
+              },
+              {
+                kpi: "Impressions",
+                description: "Total de veces que se mostró",
+                q4: (<KpiInput name="linkedin_impressions_Q425" value={kpis.linkedin_impressions_Q425} onChange={handleChange} />),m1q1: (<KpiInput name="linkedin_impressions_M1Q126" value={kpis.linkedin_impressions_M1Q126} onChange={handleChange} />),m2q1: (<KpiInput name="linkedin_impressions_M2Q126" value={kpis.linkedin_impressions_M2Q126} onChange={handleChange} />),m3q1: (<KpiInput name="linkedin_impressions_M3Q126" value={kpis.linkedin_impressions_M3Q126} onChange={handleChange} />),totalq1: (<KpiInput name="linkedin_impressions_total_Q126" value={kpis.linkedin_impressions_total_Q126} onChange={handleChange} />),
               },
               {
                 kpi: "Profile Visits",
@@ -226,6 +292,15 @@ m1q1: (
   <KpiInput name="linkedin_follower_rate_total_Q126" value={kpis.linkedin_follower_rate_total_Q126} onChange={handleChange} />
 ),
               },
+              {
+                kpi: "Total Followers to Date",
+                description: "Total de seguidores acumulados hasta la fecha",
+                q4: (<KpiInput name="linkedin_total_followers_Q425" value={kpis.linkedin_total_followers_Q425} onChange={handleChange} />),
+                m1q1: (<KpiInput name="linkedin_total_followers_M1Q126" value={kpis.linkedin_total_followers_M1Q126} onChange={handleChange} />),
+                m2q1: (<KpiInput name="linkedin_total_followers_M2Q126" value={kpis.linkedin_total_followers_M2Q126} onChange={handleChange} />),
+                m3q1: (<KpiInput name="linkedin_total_followers_M3Q126" value={kpis.linkedin_total_followers_M3Q126} onChange={handleChange} />),
+                totalq1: (<KpiInput name="linkedin_total_followers_total_Q126" value={kpis.linkedin_total_followers_total_Q126} onChange={handleChange} />),
+              }
             ],
           },
         ]}
@@ -258,61 +333,42 @@ m1q1: (
 ),
               },
               {
-                kpi: "Comments per Post",
-                description: "Comentarios promedio por publicación",
+                kpi: "Total Interactions",
+                description: "Total de reacciones, comentarios y compartidos",
                 q4: (
-  <KpiInput name="facebook_comments_per_post_Q425" value={kpis.facebook_comments_per_post_Q425} onChange={handleChange} />
+  <KpiInput name="facebook_total_interactions_Q425" value={kpis.facebook_total_interactions_Q425} onChange={handleChange} />
 ),
                 m1q1: (
-  <KpiInput name="facebook_comments_per_post_M1Q126" value={kpis.facebook_comments_per_post_M1Q126} onChange={handleChange} />
+  <KpiInput name="facebook_total_interactions_M1Q126" value={kpis.facebook_total_interactions_M1Q126} onChange={handleChange} />
 ),
                 m2q1: (
-  <KpiInput name="facebook_comments_per_post_M2Q126" value={kpis.facebook_comments_per_post_M2Q126} onChange={handleChange} />
+  <KpiInput name="facebook_total_interactions_M2Q126" value={kpis.facebook_total_interactions_M2Q126} onChange={handleChange} />
 ),
                 m3q1: (
-  <KpiInput name="facebook_comments_per_post_M3Q126" value={kpis.facebook_comments_per_post_M3Q126} onChange={handleChange} />
+  <KpiInput name="facebook_total_interactions_M3Q126" value={kpis.facebook_total_interactions_M3Q126} onChange={handleChange} />
 ),
                 totalq1: (
-  <KpiInput name="facebook_comments_per_post_total_Q126" value={kpis.facebook_comments_per_post_total_Q126} onChange={handleChange} />
+  <KpiInput name="facebook_total_interactions_total_Q126" value={kpis.facebook_total_interactions_total_Q126} onChange={handleChange} />
 ),
   
               },
               {
-                kpi: "Shares per Post",
-                description: "Compartidos promedio por publicación",
+                kpi: "Video 3 Secs Rate",
+                description: "% de usuarios que ven el video por más de 3 segundos",
                 q4: (
-  <KpiInput name="facebook_shares_per_post_Q425" value={kpis.facebook_shares_per_post_Q425} onChange={handleChange} />
+  <KpiInput name="facebook_video_3secs_rate_Q425" value={kpis.facebook_video_3secs_rate_Q425} onChange={handleChange} />
 ),
                 m1q1: (
-  <KpiInput name="facebook_shares_per_post_M1Q126" value={kpis.facebook_shares_per_post_M1Q126} onChange={handleChange} />
+  <KpiInput name="facebook_video_3secs_rate_M1Q126" value={kpis.facebook_video_3secs_rate_M1Q126} onChange={handleChange} />
 ),
                 m2q1: (
-  <KpiInput name="facebook_shares_per_post_M2Q126" value={kpis.facebook_shares_per_post_M2Q126} onChange={handleChange} />
+  <KpiInput name="facebook_video_3secs_rate_M2Q126" value={kpis.facebook_video_3secs_rate_M2Q126} onChange={handleChange} />
 ),
                 m3q1: (
-  <KpiInput name="facebook_shares_per_post_M3Q126" value={kpis.facebook_shares_per_post_M3Q126} onChange={handleChange} />
+  <KpiInput name="facebook_video_3secs_rate_M3Q126" value={kpis.facebook_video_3secs_rate_M3Q126} onChange={handleChange} />
 ),
                 totalq1: (
-  <KpiInput name="facebook_shares_per_post_total_Q126" value={kpis.facebook_shares_per_post_total_Q126} onChange={handleChange} />
-),
-              },
-              {
-                kpi: "Video Completion Rate",
-                description: "% de usuarios que ven el video completo",
-                q4: (
-  <KpiInput name="facebook_video_completion_rate_Q425" value={kpis.facebook_video_completion_rate_Q425} onChange={handleChange} />
-),
-                m1q1: (
-  <KpiInput name="facebook_video_completion_rate_M1Q126" value={kpis.facebook_video_completion_rate_M1Q126} onChange={handleChange} />
-),
-                m2q1: (
-  <KpiInput name="facebook_video_completion_rate_M2Q126" value={kpis.facebook_video_completion_rate_M2Q126} onChange={handleChange} />
-),
-                m3q1: (
-  <KpiInput name="facebook_video_completion_rate_M3Q126" value={kpis.facebook_video_completion_rate_M3Q126} onChange={handleChange} />
-),
-                totalq1: (
-  <KpiInput name="facebook_video_completion_rate_total_Q126" value={kpis.facebook_video_completion_rate_total_Q126} onChange={handleChange} />
+  <KpiInput name="facebook_video_3secs_rate_total_Q126" value={kpis.facebook_video_3secs_rate_total_Q126} onChange={handleChange} />
 ),
               },
             ],
@@ -327,28 +383,10 @@ m1q1: (
                 m1q1: (<KpiInput name="instagram_engagement_rate_M1Q126" value={kpis.instagram_engagement_rate_M1Q126} onChange={handleChange} />),m2q1: (<KpiInput name="instagram_engagement_rate_M2Q126" value={kpis.instagram_engagement_rate_M2Q126} onChange={handleChange} />),m3q1: (<KpiInput name="instagram_engagement_rate_M3Q126" value={kpis.instagram_engagement_rate_M3Q126} onChange={handleChange} />),totalq1: (<KpiInput name="instagram_engagement_rate_total_Q126" value={kpis.instagram_engagement_rate_total_Q126} onChange={handleChange} />),
               },
               {
-                kpi: "Comments per Post",
-                description: "Comentarios promedio por publicación",
-                q4: (<KpiInput name="instagram_comments_per_post_Q425" value={kpis.instagram_comments_per_post_Q425} onChange={handleChange} />),
-                m1q1: (<KpiInput name="instagram_comments_per_post_M1Q126" value={kpis.instagram_comments_per_post_M1Q126} onChange={handleChange} />),m2q1: (<KpiInput name="instagram_comments_per_post_M2Q126" value={kpis.instagram_comments_per_post_M2Q126} onChange={handleChange} />),m3q1: (<KpiInput name="instagram_comments_per_post_M3Q126" value={kpis.instagram_comments_per_post_M3Q126} onChange={handleChange} />),totalq1: (<KpiInput name="instagram_comments_per_post_total_Q126" value={kpis.instagram_comments_per_post_total_Q126} onChange={handleChange} />),
-              },
-              {
-                kpi: "Saves per Post",
-                description: "Guardados promedio por publicación",
-                q4: (<KpiInput name="instagram_saves_per_post_Q425" value={kpis.instagram_saves_per_post_Q425} onChange={handleChange} />),
-                m1q1: (<KpiInput name="instagram_saves_per_post_M1Q126" value={kpis.instagram_saves_per_post_M1Q126} onChange={handleChange} />),m2q1: (<KpiInput name="instagram_saves_per_post_M2Q126" value={kpis.instagram_saves_per_post_M2Q126} onChange={handleChange} />),m3q1: (<KpiInput name="instagram_saves_per_post_M3Q126" value={kpis.instagram_saves_per_post_M3Q126} onChange={handleChange} />),totalq1: (<KpiInput name="instagram_saves_per_post_total_Q126" value={kpis.instagram_saves_per_post_total_Q126} onChange={handleChange} />),
-              },
-              {
-                kpi: "Story Interaction Rate",
-                description: "Respuestas + taps + clics",
-                q4: (<KpiInput name="instagram_story_interaction_rate_Q425" value={kpis.instagram_story_interaction_rate_Q425} onChange={handleChange} />),
-                m1q1: (<KpiInput name="instagram_story_interaction_rate_M1Q126" value={kpis.instagram_story_interaction_rate_M1Q126} onChange={handleChange} />),m2q1: (<KpiInput name="instagram_story_interaction_rate_M2Q126" value={kpis.instagram_story_interaction_rate_M2Q126} onChange={handleChange} />),m3q1: (<KpiInput name="instagram_story_interaction_rate_M3Q126" value={kpis.instagram_story_interaction_rate_M3Q126} onChange={handleChange} />),totalq1: (<KpiInput name="instagram_story_interaction_rate_total_Q126" value={kpis.instagram_story_interaction_rate_total_Q126} onChange={handleChange} />),
-              },
-              {
-                kpi: "Reel Completion Rate",
-                description: "% de usuarios que ven el reel completo",
-                q4: (<KpiInput name="instagram_reel_completion_rate_Q425" value={kpis.instagram_reel_completion_rate_Q425} onChange={handleChange} />),
-                m1q1: (<KpiInput name="instagram_reel_completion_rate_M1Q126" value={kpis.instagram_reel_completion_rate_M1Q126} onChange={handleChange} />),m2q1: (<KpiInput name="instagram_reel_completion_rate_M2Q126" value={kpis.instagram_reel_completion_rate_M2Q126} onChange={handleChange} />),m3q1: (<KpiInput name="instagram_reel_completion_rate_M3Q126" value={kpis.instagram_reel_completion_rate_M3Q126} onChange={handleChange} />),totalq1: (<KpiInput name="instagram_reel_completion_rate_total_Q126" value={kpis.instagram_reel_completion_rate_total_Q126} onChange={handleChange} />),
+                kpi: "Total Interactions",
+                description: "Interacciones totales",
+                q4: (<KpiInput name="instagram_total_interactions_Q425" value={kpis.instagram_total_interactions_Q425} onChange={handleChange} />),
+                m1q1: (<KpiInput name="instagram_total_interactions_M1Q126" value={kpis.instagram_total_interactions_M1Q126} onChange={handleChange} />),m2q1: (<KpiInput name="instagram_total_interactions_M2Q126" value={kpis.instagram_total_interactions_M2Q126} onChange={handleChange} />),m3q1: (<KpiInput name="instagram_total_interactions_M3Q126" value={kpis.instagram_total_interactions_M3Q126} onChange={handleChange} />),totalq1: (<KpiInput name="instagram_total_interactions_total_Q126" value={kpis.instagram_total_interactions_total_Q126} onChange={handleChange} />),
               },
             ],
           },
@@ -356,26 +394,24 @@ m1q1: (
             name: "LinkedIn",
             rows: [
               {
-                kpi: "Engagement Rate",
+                kpi: "Engagement Rate Social",
                 description:
-                  "(Reacciones + Comentarios + Compartidos + Clicks) / Impressions",
+                  "(Reacciones + Comentarios + Compartidos) / Reach",
                 q4: (<KpiInput name="linkedin_engagement_rate_Q425" value={kpis.linkedin_engagement_rate_Q425} onChange={handleChange} />),m1q1: (<KpiInput name="linkedin_engagement_rate_M1Q126" value={kpis.linkedin_engagement_rate_M1Q126} onChange={handleChange} />),m2q1: (<KpiInput name="linkedin_engagement_rate_M2Q126" value={kpis.linkedin_engagement_rate_M2Q126} onChange={handleChange} />),m3q1: (<KpiInput name="linkedin_engagement_rate_M3Q126" value={kpis.linkedin_engagement_rate_M3Q126} onChange={handleChange} />),totalq1: (<KpiInput name="linkedin_engagement_rate_total_Q126" value={kpis.linkedin_engagement_rate_total_Q126} onChange={handleChange} />),
               },
               {
-                kpi: "Comments per Post",
-                description: "Comentarios promedio por publicación",
-                q4: (<KpiInput name="linkedin_comments_per_post_Q425" value={kpis.linkedin_comments_per_post_Q425} onChange={handleChange} />),m1q1: (<KpiInput name="linkedin_comments_per_post_M1Q126" value={kpis.linkedin_comments_per_post_M1Q126} onChange={handleChange} />),m2q1: (<KpiInput name="linkedin_comments_per_post_M2Q126" value={kpis.linkedin_comments_per_post_M2Q126} onChange={handleChange} />),m3q1: (<KpiInput name="linkedin_comments_per_post_M3Q126" value={kpis.linkedin_comments_per_post_M3Q126} onChange={handleChange} />),totalq1: (<KpiInput name="linkedin_comments_per_post_total_Q126" value={kpis.linkedin_comments_per_post_total_Q126} onChange={handleChange} />),
+                kpi: "Total Interactions",
+                description: "Total de reacciones, comentarios, compartidos y clicks",
+                q4: (<KpiInput name="linkedin_total_interactions_Q425" value={kpis.linkedin_total_interactions_Q425} onChange={handleChange} />),m1q1: (<KpiInput name="linkedin_total_interactions_M1Q126" value={kpis.linkedin_total_interactions_M1Q126} onChange={handleChange} />),m2q1: (<KpiInput name="linkedin_total_interactions_M2Q126" value={kpis.linkedin_total_interactions_M2Q126} onChange={handleChange} />),m3q1: (<KpiInput name="linkedin_total_interactions_M3Q126" value={kpis.linkedin_total_interactions_M3Q126} onChange={handleChange} />),totalq1: (<KpiInput name="linkedin_total_interactions_total_Q126" value={kpis.linkedin_total_interactions_total_Q126} onChange={handleChange} />),
               },
+              {kpi: "CTR", description: "Interés de lectura: Clicks / Impressions",
+               q4: (<KpiInput name="linkedin_ctr_Q425" value={kpis.linkedin_ctr_Q425} onChange={handleChange} />),m1q1: (<KpiInput name="linkedin_ctr_M1Q126" value={kpis.linkedin_ctr_M1Q126} onChange={handleChange} />),m2q1: (<KpiInput name="linkedin_ctr_M2Q126" value={kpis.linkedin_ctr_M2Q126} onChange={handleChange} />),m3q1: (<KpiInput name="linkedin_ctr_M3Q126" value={kpis.linkedin_ctr_M3Q126} onChange={handleChange} />),totalq1: (<KpiInput name="linkedin_ctr_total_Q126" value={kpis.linkedin_ctr_total_Q126} onChange={handleChange} />),},
               {
-                kpi: "Reposts per Post",
-                description: "Reposts promedio por publicación",
-                q4: (<KpiInput name="linkedin_reposts_per_post_Q425" value={kpis.linkedin_reposts_per_post_Q425} onChange={handleChange} />),m1q1: (<KpiInput name="linkedin_reposts_per_post_M1Q126" value={kpis.linkedin_reposts_per_post_M1Q126} onChange={handleChange} />),m2q1: (<KpiInput name="linkedin_reposts_per_post_M2Q126" value={kpis.linkedin_reposts_per_post_M2Q126} onChange={handleChange} />),m3q1: (<KpiInput name="linkedin_reposts_per_post_M3Q126" value={kpis.linkedin_reposts_per_post_M3Q126} onChange={handleChange} />),totalq1: (<KpiInput name="linkedin_reposts_per_post_total_Q126" value={kpis.linkedin_reposts_per_post_total_Q126} onChange={handleChange} />),
-              },
-              {
-                kpi: "Click-Through Rate (CTR)",
-                description: "Clicks / Impressions",
-                q4: (<KpiInput name="linkedin_ctr_Q425" value={kpis.linkedin_ctr_Q425} onChange={handleChange} />),m1q1: (<KpiInput name="linkedin_ctr_M1Q126" value={kpis.linkedin_ctr_M1Q126} onChange={handleChange} />),m2q1: (<KpiInput name="linkedin_ctr_M2Q126" value={kpis.linkedin_ctr_M2Q126} onChange={handleChange} />),m3q1: (<KpiInput name="linkedin_ctr_M3Q126" value={kpis.linkedin_ctr_M3Q126} onChange={handleChange} />),totalq1: (<KpiInput name="linkedin_ctr_total_Q126" value={kpis.linkedin_ctr_total_Q126} onChange={handleChange} />),
-              },
+                kpi: "Top vs. competitors Engagement Rate",
+                description:
+                  "Puesto que ocupa en el TOP 9 - engagement rate frente a competidores",
+                q4: (<KpiInput name="linkedin_top_competitors_engagement_rate_Q425" value={kpis.linkedin_top_competitors_engagement_rate_Q425} onChange={handleChange} />),m1q1: (<KpiInput name="linkedin_top_competitors_engagement_rate_M1Q126" value={kpis.linkedin_top_competitors_engagement_rate_M1Q126} onChange={handleChange} />),m2q1: (<KpiInput name="linkedin_top_competitors_engagement_rate_M2Q126" value={kpis.linkedin_top_competitors_engagement_rate_M2Q126} onChange={handleChange} />),m3q1: (<KpiInput name="linkedin_top_competitors_engagement_rate_M3Q126" value={kpis.linkedin_top_competitors_engagement_rate_M3Q126} onChange={handleChange} />),totalq1: (<KpiInput name="linkedin_top_competitors_engagement_rate_total_Q126" value={kpis.linkedin_top_competitors_engagement_rate_total_Q126} onChange={handleChange} />) 
+              }
             ],
           },
         ]}
