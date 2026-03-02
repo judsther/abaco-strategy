@@ -33,6 +33,20 @@ export default function RoleEvolution() {
       ),
     },
     {
+      title: "KPIs Actuales",
+      content: (
+        <>
+          
+          <ul className="list-disc pl-6 mt-2 space-y-1">
+            <li>Entregables de proyectos encomendados.</li>
+            <li>Insights de alcance y crecimiento de audiencia en redes sociales.</li>
+            <li>Clicks de aperturas de emails de marketing.</li>
+          </ul>
+          
+        </>
+      ),
+    },
+    {
       title: "Challenges Personales",
       content: (
         <>
@@ -61,20 +75,7 @@ export default function RoleEvolution() {
         </>
       ),
     },
-    {
-      title: "Resultado Esperado (90 días)",
-      content: (
-        <>
-          <ul className="list-disc pl-6 mt-2 space-y-1">
-            <li>Mayor consistencia en contenido.</li>
-            <li>Ejecución real de la estrategia diseñada.</li>
-            <li>Mejor calidad narrativa en cada canal.</li>
-            <li>Cada canal aporta para el cumplimiento de objetivos de la estrategia general de mkt.</li>
-           <li>Alcance periódico de los objetivos definidos.</li>
-          </ul>
-        </>
-      ),
-    },
+  
   ];
 
   const showNext = () => {
