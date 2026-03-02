@@ -40,7 +40,7 @@ export default function RoleEvolution() {
           <ul className="list-disc pl-6 mt-2 space-y-1">
             <li>Entregables de proyectos encomendados.</li>
             <li>Insights de alcance y crecimiento de audiencia en redes sociales.</li>
-            <li>Clicks de aperturas de emails de marketing.</li>
+            <li>Performance de emails de marketing.</li>
           </ul>
           
         </>
