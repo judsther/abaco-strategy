@@ -1,11 +1,12 @@
 import { useState } from "react";
 
 
-import MetaCalendar from "./MetaCalendar";
+//import MetaCalendar from "./MetaCalendar";
 import LinkedInCalendar from "./LinkedInCalendar";
 import YTTTCalendar from "./YTTTCalendar";
 import TabButton from "../../components/TabButton";
 import OrganicNavigationBtns from "../../components/OrganicNavigationBtns";
+import GeneralCalendar from "./GeneralCalendar";
 
 export default function ContentCalendarView() {
   const [active, setActive] = useState("meta");
@@ -32,8 +33,8 @@ export default function ContentCalendarView() {
         {/* Selector de canal */}
         <div className="flex flex-wrap gap-4 pt-6">
           <TabButton
-            label="Meta"
-            value="meta"
+            label="General"
+            value="general"
             active={active}
             setActive={setActive}
           />
@@ -54,7 +55,7 @@ export default function ContentCalendarView() {
 
       {/* Vista dinámica */}
       <div>
-        {active === "meta" && <MetaCalendar />}
+        {active === "general" && <GeneralCalendar />}
         {active === "linkedin" && <LinkedInCalendar />}
         {active === "yttt" && <YTTTCalendar />}
       </div>

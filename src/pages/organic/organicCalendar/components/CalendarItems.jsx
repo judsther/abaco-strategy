@@ -1,102 +1,133 @@
 import Comments from "../../components/Comments";
 
-export default function CalendarItem({
-  postId1,
-  postId2,
-  postId3,
-  postId4,
+export default function CalendarItems({
   day,
   time,
+  platform,
   pillar,
   format,
-  caption1,
+
+  // Formato tipo contenido1, contenido2...
   contenido1,
-  caption2,
+  caption1,
+  postId1,
+
   contenido2,
-  caption3,
+  caption2,
+  postId2,
+
   contenido3,
-  caption4,
+  caption3,
+  postId3,
+
   contenido4,
+  caption4,
+  postId4,
+
+  contenido5,
+  caption5,
+  postId5,
 }) {
+  // Convertimos automáticamente a array interno
+  const posts = [
+    { contenido: contenido1, caption: caption1, postId: postId1 },
+    { contenido: contenido2, caption: caption2, postId: postId2 },
+    { contenido: contenido3, caption: caption3, postId: postId3 },
+    { contenido: contenido4, caption: caption4, postId: postId4 },
+    { contenido: contenido5, caption: caption5, postId: postId5 },
+  ].filter((post) => post.contenido); // elimina vacíos
+
   return (
-    <div className="bg-slate-100 border border-indigo-800 rounded-lg p-6 space-y-2">
-      <div className="flex flex-wrap gap-3 text-xl text-indigo-800">
-        <span>
-          <strong>{day}</strong>
-        </span>
-        <span>{time}</span>
-      </div>
-      <div className="space-y-2 text-slate-700">
-        <p>
-          <strong>Pilar:</strong> {pillar}
-        </p>
-        <p>
-          <strong>Formato:</strong> {format}
-        </p>
-        <div className="grid grid-cols-2 gap-6">
-          <div className="bg-white text-black p-4 rounded-xl">
-            <p className="whitespace-pre-line">
-              <strong className="bg-slate-300 p-2 rounded-xl">
-                Contenido Semana 1:
-              </strong>{" "}
-              <br />
-              <br />
-              {contenido1}
-            </p>
-            <p className="text-slate-500 font-semibold">Caption:</p>
-            <p className="whitespace-pre-line">{caption1}</p>
-            {postId1 && <Comments postId={postId1} />}
-          </div>
-          <div className="bg-white text-black p-4 rounded-xl">
-            <p className="whitespace-pre-line">
-              <strong className="bg-slate-300 p-2 rounded-xl">
-                Contenido Semana 2:
-              </strong>{" "}
-              <br />
-              <br />
-              {contenido2}
-            </p>
-            <p className="text-slate-500 font-semibold">Caption:</p>
-            <p className="whitespace-pre-line">{caption2}</p>
-            {postId2 && <Comments postId={postId2} />}
-          </div>
-          <div className="bg-white text-black p-4 rounded-xl">
-            <p className="whitespace-pre-line">
-              <strong className="bg-slate-300 p-2 rounded-xl">
-                Contenido Semana 3:
-              </strong>{" "}
-              <br />
-              <br />
-              {contenido3}
-            </p>
-            <p className="text-slate-500 font-semibold">Caption:</p>
-            <p className="whitespace-pre-line">{caption3}</p>
-            {postId3 && <Comments postId={postId3} />}
-          </div>
-          <div className="bg-white text-black p-4 rounded-xl">
-            <p className="whitespace-pre-line">
-              <strong className="bg-slate-300 p-2 rounded-xl">
-                Contenido Semana 4:
-              </strong>{" "}
-              <br />
-              <br />
-              {contenido4}
-            </p>
-            <p className="text-slate-500 font-semibold">Caption:</p>
-            <p className="whitespace-pre-line">{caption4}</p>
-            {postId4 && <Comments postId={postId4} />}
-          </div>
+ 
+    <div className="bg-white border border-indigo-200 rounded-2xl p-8 shadow-sm space-y-8">
+  
+  {/* HEADER SUPERIOR */}
+  <div className="flex items-center justify-between gap-6">
+    
+    {/* Lado izquierdo */}
+    <div>
+      <h4 className="text-2xl font-semibold text-indigo-700">
+        {day}
+      </h4>
+      <p className="text-slate-500 text-sm mt-1">{time}</p>
+    </div>
+
+    {/* Lado derecho */}
+    <div className=" gap-6 text-sm">
+      {platform && (
+        <div>
+          <p className="text-slate-400 uppercase tracking-wide text-xs">
+            Canal
+          </p>
+          <p className="font-medium text-slate-800">{platform}</p>
         </div>
+      )}
+
+      <div>
+        <p className="text-slate-400 uppercase tracking-wide text-xs">
+          Pilar
+        </p>
+        <p className="font-medium text-slate-800">{pillar}</p>
+      </div>
+
+      <div>
+        <p className="text-slate-400 uppercase tracking-wide text-xs">
+          Formato
+        </p>
+        <p className="font-medium text-slate-800">{format}</p>
       </div>
     </div>
+  </div>
+
+  {/* CONTENIDOS */}
+  <div className=" gap-8">
+    {posts.map((post, index) => (
+      <div
+        key={post.postId || index}
+        className="bg-slate-50 border border-slate-200 p-6 rounded-xl space-y-5"
+      >
+        <div>
+          <span className="text-xs font-semibold bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full">
+            Contenido {index + 1}
+          </span>
+
+          <p className="whitespace-pre-line mt-4 text-slate-700 leading-relaxed">
+            {post.contenido}
+          </p>
+        </div>
+
+        {post.caption && (
+          <div>
+            <p className="text-slate-400 text-xs uppercase tracking-wide mb-1">
+              Caption
+            </p>
+            <p className="whitespace-pre-line text-slate-700 leading-relaxed">
+              {post.caption}
+            </p>
+          </div>
+        )}
+
+        {post.postId && (
+          <div className="pt-4 border-t border-slate-200">
+            <Comments postId={post.postId} />
+          </div>
+        )}
+      </div>
+    ))}
+  </div>
+</div>
   );
 }
-
 export function WeekBlock({ title, children }) {
   return (
-    <section className="space-y-10">
-      <h3 className="text-3xl font-semibold text-slate-900">{title}</h3>
-      <div className="grid gap-20">{children}</div>
+    <section className="space-y-12">
+      <h3 className="text-4xl font-bold text-slate-900">
+        {title}
+      </h3>
+
+      <div className="space-y-16">
+        {children}
+      </div>
     </section>
   );
 }

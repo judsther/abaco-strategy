@@ -106,23 +106,15 @@ export default function PaidAdsKPIsView() {
             m1q1: (<KpiInput name="ads_CTR_M1Q126" value={kpis.ads_CTR_M1Q126} onChange={handleChange} />), m2q1: (<KpiInput name="ads_CTR_M2Q126" value={kpis.ads_CTR_M2Q126} onChange={handleChange} />), m3q1: (<KpiInput name="ads_CTR_M3Q126" value={kpis.ads_CTR_M3Q126} onChange={handleChange} />), totalq1: (<KpiInput name="ads_CTR_total_Q126" value={kpis.ads_CTR_total_Q126} onChange={handleChange} />),
           },
           {
-            kpi: "Hook Rate (Video)",
-            description: "Visualizaciones ≥ 3s / Impressions",
-            // q4: "96% (Óptimo > 25%)",
-            q4:(<KpiInput name="ads_HookRate_Q425" value={kpis.ads_HookRate_Q425} onChange={handleChange} />),
-            m1q1: (<KpiInput name="ads_HookRate_M1Q126" value={kpis.ads_HookRate_M1Q126} onChange={handleChange} />), m2q1: (<KpiInput name="ads_HookRate_M2Q126" value={kpis.ads_HookRate_M2Q126} onChange={handleChange} />), m3q1: (<KpiInput name="ads_HookRate_M3Q126" value={kpis.ads_HookRate_M3Q126} onChange={handleChange} />), totalq1: (<KpiInput name="ads_HookRate_total_Q126" value={kpis.ads_HookRate_total_Q126} onChange={handleChange} />),
-          },
-          {
-            kpi: "Hold Rate (Video)",
-            description: "Retención promedio del video",
-            // q4: "— (no medido en Q4)",
-            q4:(<KpiInput name="ads_HoldRate_Q425" value={kpis.ads_HoldRate_Q425} onChange={handleChange} />),
-            m1q1: (<KpiInput name="ads_HoldRate_M1Q126" value={kpis.ads_HoldRate_M1Q126} onChange={handleChange} />), m2q1: (<KpiInput name="ads_HoldRate_M2Q126" value={kpis.ads_HoldRate_M2Q126} onChange={handleChange} />), m3q1: (<KpiInput name="ads_HoldRate_M3Q126" value={kpis.ads_HoldRate_M3Q126} onChange={handleChange} />), totalq1: (<KpiInput name="ads_HoldRate_total_Q126" value={kpis.ads_HoldRate_total_Q126} onChange={handleChange} />),
+            kpi: "Clicks en Enlace",
+            description: "Número de clics en el enlace del anuncio",
+            q4: (<KpiInput name="ads_clicks_enlace_Q425" value={kpis.ads_clicks_enlace_Q425} onChange={handleChange} />),
+            m1q1: (<KpiInput name="ads_clicks_enlace_M1Q126" value={kpis.ads_clicks_enlace_M1Q126} onChange={handleChange} />), m2q1: (<KpiInput name="ads_clicks_enlace_M2Q126" value={kpis.ads_clicks_enlace_M2Q126} onChange={handleChange} />), m3q1: (<KpiInput name="ads_clicks_enlace_M3Q126" value={kpis.ads_clicks_enlace_M3Q126} onChange={handleChange} />), totalq1: (<KpiInput name="ads_clicks_enlace_total_Q126" value={kpis.ads_clicks_enlace_total_Q126} onChange={handleChange} />),
           },
         ]}
       />
 
-      {/* 3 */}
+      {/* 3 
       <KpiSection
         title="KPIs de Consideración"
         subtitle="¿El usuario evalúa el valor de la propuesta?"
@@ -152,7 +144,7 @@ export default function PaidAdsKPIsView() {
             m1q1: (<KpiInput name="engagement_post_click_M1Q126" value={kpis.engagement_post_click_M1Q126} onChange={handleChange} />), m2q1: (<KpiInput name="engagement_post_click_M2Q126" value={kpis.engagement_post_click_M2Q126} onChange={handleChange} />), m3q1: (<KpiInput name="engagement_post_click_M3Q126" value={kpis.engagement_post_click_M3Q126} onChange={handleChange} />), totalq1: (<KpiInput name="engagement_post_click_total_Q126" value={kpis.engagement_post_click_total_Q126} onChange={handleChange} />),
           },
         ]}
-      />
+      />*/}
 
       {/* 4 */}
       <KpiSection
@@ -205,37 +197,16 @@ export default function PaidAdsKPIsView() {
             description: "Revenue / Ad Spend",
             q4:(<KpiInput name="ROAS_Q425" value={kpis.ROAS_Q425} onChange={handleChange} />), m1q1: (<KpiInput name="ROAS_M1Q126" value={kpis.ROAS_M1Q126} onChange={handleChange} />), m2q1: (<KpiInput name="ROAS_M2Q126" value={kpis.ROAS_M2Q126} onChange={handleChange} />), m3q1: (<KpiInput name="ROAS_M3Q126" value={kpis.ROAS_M3Q126} onChange={handleChange} />), totalq1: (<KpiInput name="ROAS_total_Q126" value={kpis.ROAS_total_Q126} onChange={handleChange} />),
           },
+          {
+            kpi: "Ad Spend",
+            description: "Gasto total en anuncios",
+            q4:(<KpiInput name="ad_spend_Q425" value={kpis.ad_spend_Q425} onChange={handleChange} />), m1q1: (<KpiInput name="ad_spend_M1Q126" value={kpis.ad_spend_M1Q126} onChange={handleChange} />), m2q1: (<KpiInput name="ad_spend_M2Q126" value={kpis.ad_spend_M2Q126} onChange={handleChange} />), m3q1: (<KpiInput name="ad_spend_M3Q126" value={kpis.ad_spend_M3Q126} onChange={handleChange} />), totalq1: (<KpiInput name="ad_spend_total_Q126" value={kpis.ad_spend_total_Q126} onChange={handleChange} />),
+          }
         ]}
       />
 
       {/* 5 */}
-      <KpiSection
-        title="KPIs de Escalabilidad"
-        subtitle="¿El modelo es sostenible y escalable en el tiempo?"
-        rows={[
-          {
-            kpi: "CAC",
-            description: "Salud financiera del modelo de adquisición",
-            q4: (<KpiInput name="CAC_Q425" value={kpis.CAC_Q425} onChange={handleChange} />),
-            m1q1: (<KpiInput name="CAC_M1Q126" value={kpis.CAC_M1Q126} onChange={handleChange} />), m2q1: (<KpiInput name="CAC_M2Q126" value={kpis.CAC_M2Q126} onChange={handleChange} />), m3q1: (<KpiInput name="CAC_M3Q126" value={kpis.CAC_M3Q126} onChange={handleChange} />), totalq1: (<KpiInput name="CAC_total_Q126" value={kpis.CAC_total_Q126} onChange={handleChange} />),
-          },
-          {
-            kpi: "Payback Period",
-            description: "Tiempo necesario para recuperar la inversión",
-            q4: (<KpiInput name="payback_period_Q425" value={kpis.payback_period_Q425} onChange={handleChange} />), m1q1: (<KpiInput name="payback_period_M1Q126" value={kpis.payback_period_M1Q126} onChange={handleChange} />), m2q1: (<KpiInput name="payback_period_M2Q126" value={kpis.payback_period_M2Q126} onChange={handleChange} />), m3q1: (<KpiInput name="payback_period_M3Q126" value={kpis.payback_period_M3Q126} onChange={handleChange} />), totalq1: (<KpiInput name="payback_period_total_Q126" value={kpis.payback_period_total_Q126} onChange={handleChange} />),
-          },
-          {
-            kpi: "Incremental Lift",
-            description: "Impacto incremental real de la pauta",
-            q4: (<KpiInput name="incremental_lift_Q425" value={kpis.incremental_lift_Q425} onChange={handleChange} />), m1q1: (<KpiInput name="incremental_lift_M1Q126" value={kpis.incremental_lift_M1Q126} onChange={handleChange} />), m2q1: (<KpiInput name="incremental_lift_M2Q126" value={kpis.incremental_lift_M2Q126} onChange={handleChange} />), m3q1: (<KpiInput name="incremental_lift_M3Q126" value={kpis.incremental_lift_M3Q126} onChange={handleChange} />), totalq1: (<KpiInput name="incremental_lift_total_Q126" value={kpis.incremental_lift_total_Q126} onChange={handleChange} />),
-          },
-          {
-            kpi: "Attribution Share",
-            description: "Contribución de cada canal al resultado final",
-            q4: (<KpiInput name="attribution_share_Q425" value={kpis.attribution_share_Q425} onChange={handleChange} />), m1q1: (<KpiInput name="attribution_share_M1Q126" value={kpis.attribution_share_M1Q126} onChange={handleChange} />), m2q1: (<KpiInput name="attribution_share_M2Q126" value={kpis.attribution_share_M2Q126} onChange={handleChange} />), m3q1: (<KpiInput name="attribution_share_M3Q126" value={kpis.attribution_share_M3Q126} onChange={handleChange} />), totalq1: (<KpiInput name="attribution_share_total_Q126" value={kpis.attribution_share_total_Q126} onChange={handleChange} />),
-          },
-        ]}
-      />
+      
     </div>
   );
 }

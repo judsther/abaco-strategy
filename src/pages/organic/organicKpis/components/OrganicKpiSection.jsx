@@ -61,7 +61,7 @@ export default function OrganicKpiSection({ title, subtitle, platforms }) {
                         {row.kpi}
                       </td>
                       <td className="p-4 text-slate-600">{row.description}</td>
-                      <td className="p-4 text-slate-700">{row.q4 || "—"}</td>
+                      <td className="p-4 font-bold text-indigo-800">{row.q4 || "—"}</td>
                       <td className="p-4 text-slate-600">{row.m1q1 || "-"}</td>
                       <td className="p-4 text-slate-600">{row.m2q1 || "-"}</td>
                       <td className="p-4 text-slate-600">{row.m3q1 || "-"}</td>
