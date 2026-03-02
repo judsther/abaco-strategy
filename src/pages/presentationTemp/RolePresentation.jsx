@@ -10,11 +10,9 @@ export default function RoleEvolution() {
         <>
           Actualmente:
           <ul className="list-disc pl-6 mt-2 space-y-1">
-            <li>Propongo estrategias de marketing que integra redes/emails.</li>
+            <li>Propongo estrategias de contenido para redes y coordino su implementación.</li>
             <li>Propongo el contenido (mensaje) de Email marketing para leads semanal.</li>
-            <li>Creación de contenido para los canales de redes sociales.</li>
-            <li>Coordinación de campañas de co-marketing.</li>
-            <li>Reportes de KPIs de Ads y redes sociales orgánico.</li>
+            <li>Reportes de KPIs de redes sociales orgánico y de email mkt.</li>
           </ul>
         </>
       ),
@@ -25,9 +23,9 @@ export default function RoleEvolution() {
         <>
           Se me han encomendado proyectos estratégicos:
           <ul className="list-disc pl-6 mt-2 space-y-1">
-            <li>Presentar estrategia integral de marketing 2026.</li>
-            <li>Planear y organizar un flujo de Email que acompaña el customer journey (registro → desembolso → cobro).</li>
-            <li>Coordinar alianza externa para campaña conjunta.</li>
+            <li>Presentar estrategia integral de marketing 2026 Q1.</li>
+            <li>Proponer un flujo de Email que acompaña el customer journey (registro → desembolso → cobro) y su respectivo copy.</li>
+            <li>Coordinar alianza externa para campaña conjunta: Ábaco x SmartPyme.</li>
           </ul>
           
         </>
@@ -40,26 +38,13 @@ export default function RoleEvolution() {
           Conflicto entre estrategia y ejecución:
           <ul className="list-disc pl-6 mt-2 space-y-1">
             <li>Si estructuro estrategia, baja la calidad y frecuencia del contenido.</li>
-            <li>Si ejecuto contenido, descuido proyectos estratégicos.</li>
-            <li>Hay cierto contenido que se puede programar cuando es solo de diseño (carrusels/statics). Pero hay otro que es mas pensado y requiere seguimiento constante en la ejecución (ej. contenido para linkedin, buscar mayor alcance con videos tipo trends para reels, entrevistas/storytelling)</li>
+            <li>Dedicación a contenido que requiere seguimiento (entrevistas/storytelling/trends)</li>
             <li>No hay seguimiento dedicado a la implementación estratégica.</li>
           </ul>
         </>
       ),
     },
-    {
-      title: "Efectos",
-      content: (
-        <>
-          Parte de la estrategia presentada en enero aún no se ejecuta,
-          no por falta de claridad, sino por falta de tiempo operativo estructurado.
-          <br />
-          Contenido para LinkedIn y nuevos canales (YT/TT) no ha sido implemantado por falta de organización para creación de contenido de calidad.
-          <br />
-        
-        </>
-      ),
-    },
+
     {
       title: "Evolución del rol",
       content: (
@@ -67,9 +52,9 @@ export default function RoleEvolution() {
           Visualizo una definición más clara:
           <ul className="list-disc pl-6 mt-2 space-y-1">
             <li>El Head lidera dirección estratégica y priorización.</li>
-            <li>Yo me enfoco en ejecución y calidad del contenido requerido por canal o por proyecto.</li>
-            <li>Responsabilidad clara por canal y entregables.</li>
+            <li>Enfoque en ejecución y calidad del contenido requerido por canal o por proyecto.</li>
             <li>Seguimiento periódico de cumplimiento estratégico.</li>
+            <li>Definición clara de mis objetivos.</li>
           </ul>
         </>
       ),
@@ -82,7 +67,7 @@ export default function RoleEvolution() {
             <li>Mayor consistencia en contenido.</li>
             <li>Ejecución real de la estrategia diseñada.</li>
             <li>Mejor calidad narrativa en cada canal.</li>
-            <li>Menos dispersión, más impacto.</li>
+            <li>Cada canal aporta para el cumplimiento de objetivos de la estrategia general de mkt.</li>
           </ul>
         </>
       ),
