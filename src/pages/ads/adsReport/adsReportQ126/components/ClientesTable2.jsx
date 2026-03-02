@@ -234,13 +234,13 @@ export default function ClientesTable2() {
         <thead>
           <tr className="bg-slate-100">
             <th className="p-3 text-left">Cliente</th>
-            <th className="p-3">Fecha Primer Desembolso</th>
+            <th className="p-3">Primer Desembolso</th>
             <th className="p-3">Ingreso Proyectado</th>
             <th className="p-3">Monto Desembolsado</th>
-            <th className="p-3">Línea Máxima</th>
-            <th className="p-3">Promedio Días</th>
-            <th className="p-3">Tasa Máxima</th>
-            <th className="p-3">Promedio Asesoría</th>
+            <th className="p-3">Línea Aprobada</th>
+            <th className="p-3">Días Negociados</th>
+            <th className="p-3">Tasa de Interés</th>
+            <th className="p-3">Comisión</th>
           </tr>
         </thead>
 
