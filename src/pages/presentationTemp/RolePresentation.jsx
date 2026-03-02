@@ -52,10 +52,11 @@ export default function RoleEvolution() {
         <>
           Visualizo una definición más clara:
           <ul className="list-disc pl-6 mt-2 space-y-1">
-            <li>El Head lidera dirección estratégica y priorización.</li>
-            <li>Enfoque en ejecución y calidad del contenido requerido por canal o por proyecto.</li>
-            <li>Seguimiento periódico de cumplimiento estratégico.</li>
-            <li>Definición clara de mis objetivos.</li>
+            <li>El head lidera dirección estratégica y priorización.</li>
+            <li>Mi enfoque en ejecución y calidad del contenido requerido por canal o por proyecto.</li>
+            <li>Apoyo a nivel de coordinación de los proyectos estratégicos definidos por el head.</li>
+            <li>Si la estrategia lo requiere, más dedicación a la creación de contenido audiovisual.</li>
+          <li>Objetivos medibles definidos.</li>
           </ul>
         </>
       ),
@@ -69,6 +70,7 @@ export default function RoleEvolution() {
             <li>Ejecución real de la estrategia diseñada.</li>
             <li>Mejor calidad narrativa en cada canal.</li>
             <li>Cada canal aporta para el cumplimiento de objetivos de la estrategia general de mkt.</li>
+           <li>Alcance periódico de los objetivos definidos.</li>
           </ul>
         </>
       ),
