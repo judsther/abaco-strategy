@@ -13,6 +13,7 @@ export default function RoleEvolution() {
             <li>Propongo estrategias de contenido para redes y coordino su implementación.</li>
             <li>Propongo el contenido (mensaje) de Email marketing para leads semanal.</li>
             <li>Reportes de KPIs de redes sociales orgánico y de email mkt.</li>
+            <li>Eventualmente: Fotografía y video para contenido vario.</li>
           </ul>
         </>
       ),
