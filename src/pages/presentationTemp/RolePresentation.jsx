@@ -11,7 +11,7 @@ export default function RoleEvolution() {
           Actualmente:
           <ul className="list-disc pl-6 mt-2 space-y-1">
             <li>Propongo estrategias de contenido para redes y coordino su implementación.</li>
-            <li>Propongo el contenido (mensaje) de Email marketing para leads semanal.</li>
+            <li>Planifico el contenido (mensaje) de Email marketing para leads semanal.</li>
             <li>Reportes de KPIs de redes sociales orgánico y de email mkt.</li>
             <li>Eventualmente: Fotografía y video para contenido vario.</li>
           </ul>
