@@ -9,7 +9,7 @@ import OrganicNavigationBtns from "../../components/OrganicNavigationBtns";
 import GeneralCalendar from "./GeneralCalendar";
 
 export default function ContentCalendarView() {
-  const [active, setActive] = useState("meta");
+  const [active, setActive] = useState("general");
 
   return (
     <div className="max-w-6xl mx-auto py-14 px-6 space-y-12">
