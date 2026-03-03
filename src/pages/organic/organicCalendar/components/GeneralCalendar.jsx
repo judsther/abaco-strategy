@@ -45,8 +45,8 @@ Decide el Futuro: Con liquidez constante, tomas el control para invertir, crecer
             platform="Instagram / Facebook / LinkedIn"
             pillar="Confianza & Comunidad Ábaco"
             format="Fotografía"
-            contenido1={`Imagen: Foto de Juan Carlos frente a su computadora.`}
-            caption1={`Tecnología de punta con el corazón humano que tu negocio merece. En Ábaco, la eficiencia digital siempre va acompañada de un soporte cercano y empático.
+            contenido1={`Imagen: Foto de Juan Carlos frente a su computadora con dos o 3 personas de su equipo detrás de él viendo la pantalla.`}
+            caption1={`El equipo de Tecnología de Ábaco siempre está trabajando para que tu experiencia en nuestra plataforma sea ágil y segura. Tu adelantas tus facturas en horas, nosotros hacemos el trabajo complicado. Procesos 100% digitales con el corazón humano que tu negocio merece.
 #TechArea`}
             postId1="marzo-2026-foto-1"
           />
@@ -86,7 +86,8 @@ Negociar con Poder: Con efectivo inmediato, obtienes mejores condiciones con pro
 Invertir con Confianza: El capital liberado es tu motor para stock, marketing y expansión.
 
 Adoptar la Agilidad Digital: Transforma el papeleo en velocidad para tu flujo de caja.`}
-            caption2={`Un flujo de caja imparable es la base de todo negocio exitoso. Con estos 5 puntos, no solo gestionas tu liquidez, la dominas. ¡Toma el control y mira cómo tu empresa crece! #PYMES #ElSalvador`}
+            caption2={`Un flujo de caja imparable es la base de todo negocio exitoso. Con estos 5 puntos, no solo gestionas tu liquidez, la dominas. 
+            #PYMES #ElSalvador`}
             postId2="marzo-2026-carrousel-2"
           />
 
@@ -106,8 +107,8 @@ Adoptar la Agilidad Digital: Transforma el papeleo en velocidad para tu flujo de
             platform="Instagram / Facebook / LinkedIn"
             pillar="Confianza & Comunidad Ábaco"
             format="Fotografía"
-            contenido2={`Imagen: Foto de algunos miembros del equipo de Comercial en acción [dos sentadas a la par frente a computador una viendo a la otra y el otro de pie viendo la laptop de una].`}
-            caption2={`Más allá de las transacciones, construimos relaciones. Gracias por confiar en nosotros para ser el aliado estratégico que tu empresa necesita para crecer. Nuestro 
+            contenido2={`Imagen: Foto de algunos miembros del equipo de Comercial en acción [dos sentadas a la par frente a computador una viendo a la otra y el otro de pie viendo y señalando la laptop de una].`}
+            caption2={`Más allá de las transacciones, nuestros asesores financieros construyen relaciones. Gracias por confiar en nosotros para ser el aliado estratégico que tu empresa necesita para crecer. Nuestro 
 #ComercialArea`}
             postId2="marzo-2026-foto-2"
           />
@@ -119,7 +120,7 @@ Adoptar la Agilidad Digital: Transforma el papeleo en velocidad para tu flujo de
             pillar="Comercial/Promocional Oferta Directa"
             format="Single Image"
             contenido2={`¿Necesitas liquidez URGENTE? Hazlo posible con Ábaco.`}
-            caption2={`Con CashX de Ábaco, obtén el adelanto que necesitas sin trámites complicados. ¡Visita el link en bio y solicita tu adelanto!`}
+            caption2={`Con CashX de Ábaco, obtén el adelanto que necesitas sin trámites complicados. Visita el link en bio y solicita tu adelanto de facturas.`}
             postId2="marzo-2026-static-2"
           />
         </div>
@@ -143,11 +144,11 @@ Adoptar la Agilidad Digital: Transforma el papeleo en velocidad para tu flujo de
       format="Carrousel"
       contenido3={`Guía: Gestión de facturas enfocada en crecimiento para PYMES.
 
-A. Conviértelas en ventaja competitiva: Dile que sí a ese cliente grande con plazos de pago largos y no pierdas oportunidades.
+#1. Conviértelas en ventaja competitiva: Dile que sí a ese cliente grande con plazos de pago largos y no pierdas oportunidades.
 
-B. Reconoce el valor oculto: Tus facturas por cobrar son activos listos para convertirse en efectivo con el factoraje ágil de Ábaco.
+#2. Reconoce el valor oculto: Tus facturas por cobrar son activos listos para convertirse en efectivo con el factoraje ágil de Ábaco.
 
-C. Impulsa tu Crecimiento: Usa esa liquidez inmediata para comprar stock, invertir en campañas o expandirte.`}
+#3. Impulsa tu Crecimiento: Usa esa liquidez inmediata para comprar stock, invertir en campañas o expandirte.`}
       caption3={`La gestión de facturas no tiene por qué ser compleja. Con esta guía, conviertes la espera en oportunidad y cada factura en un paso más hacia el crecimiento de tu PYME. #PYMES #ElSalvador`}
       postId3="marzo-2026-carrousel-3"
     />
@@ -159,8 +160,8 @@ C. Impulsa tu Crecimiento: Usa esa liquidez inmediata para comprar stock, invert
       platform="Instagram / Facebook"
       pillar="Datos Curiosos"
       format="Static"
-      contenido3={`Texto imagen: Invertir en tecnología financiera ahorra hasta un 40% en costos operativos para PYMES.`}
-      caption3={`La digitalización no es un gasto, es una inversión inteligente. Descubre cómo nuestras soluciones tecnológicas optimizan tu operación y potencian tu rentabilidad.`}
+      contenido3={`Invertir en tecnología financiera ahorra hasta un 40% en costos operativos para PYMES.`}
+      caption3={`La digitalización no es un gasto, es una inversión inteligente. Descubre cómo nuestras soluciones de financiamiento digital optimizan tu liquidez y potencian tu rentabilidad.`}
       postId3="marzo-2026-dato-3"
     />
 
@@ -171,8 +172,9 @@ C. Impulsa tu Crecimiento: Usa esa liquidez inmediata para comprar stock, invert
       platform="Instagram / Facebook / LinkedIn"
       pillar="Confianza & Comunidad Ábaco"
       format="Fotografía"
-      contenido3={`Imagen: Foto del Equipo de Contaduría`}
-      caption3={`Nos sentimos honrados de impulsar a la comunidad empresarial salvadoreña, sabiendo que juntos construimos un futuro más próspero. #AccountingArea`}
+      contenido3={`Foto del Equipo de Contaduría`}
+      caption3={`El área de contaduría Ábaco mantiene el orden y la transparencia en todas nuestras operaciones. Con su ayuda podemos ofrecer el impulso que la comunidad empresarial salvadoreña necesita.
+         #AccountingArea`}
       postId3="marzo-2026-foto-3"
     />
 
@@ -232,8 +234,8 @@ C. Impulsa tu Crecimiento: Usa esa liquidez inmediata para comprar stock, invert
       platform="Instagram / Facebook / LinkedIn"
       pillar="Confianza & Comunidad Ábaco"
       format="Fotografía"
-      contenido4={`Imagen: Foto de alguien del área de cobranza.`}
-      caption4={`Nos sentimos honrados de impulsar a la comunidad empresarial salvadoreña, sabiendo que juntos construimos un futuro más próspero. #CollectionsArea`}
+      contenido4={`Imagen: Foto de algunos miembros del área de cobranza.`}
+      caption4={`Nos sentimos honrados de impulsar a la comunidad empresarial salvadoreña. Nuestro equipo de cobranza está comprometido con ayudar a cada empresa a cumplir con sus objetivos de crecimiento a través de soluciones flexibles y humanas. #CobranzaArea`}
       postId4="marzo-2026-foto-4"
     />
 
@@ -245,7 +247,7 @@ C. Impulsa tu Crecimiento: Usa esa liquidez inmediata para comprar stock, invert
       pillar="Comercial/Promocional Oferta Directa"
       format="Single Image"
       contenido4={`Transforma tus ventas al crédito en tu ventaja competitiva sin arriesgar tu flujo de caja.`}
-      caption4={`¿Listo para dar el siguiente paso? Nuestra plataforma digital te conecta con tu capital en segundos. Registra tu empresa y empieza a cobrar tus facturas a tu tiempo.`}
+      caption4={`¿Listo para dar el siguiente paso? Nuestra plataforma digital te conecta con tu capital en horas. Registra tu empresa y empieza a cobrar tus facturas a tu tiempo.`}
       postId4="marzo-2026-static-4"
     />
 
