@@ -88,7 +88,7 @@ export default function CalendarItems({
       >
         <div>
           <span className="text-xs font-semibold bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full">
-            Contenido {index + 1}
+            Contenido 
           </span>
 
           <p className="whitespace-pre-line mt-4 text-slate-700 leading-relaxed">
